@@ -1,0 +1,29 @@
+// BOOTSTRAP
+@import "bootstrap/bootstrap";
+
+// OWL
+@import "owl/owl.carousel";
+@import "owl/owl.theme.default";
+@import "owl/owl.theme.green";
+
+// FONT-AWESOME
+@import "font-face/font-face";
+@import "font-awesome/brands";
+@import "font-awesome/fontawesome";
+@import "font-awesome/regular";
+@import "font-awesome/solid";
+@import "font-awesome/v4-shims";
+
+// CUSTOM
+@import "variables";
+@import "custom/header";
+@import "custom/content-carousel";
+@import "custom/content-1";
+@import "custom/content-2";
+@import "custom/content-3";
+@import "custom/content-4";
+@import "custom/content-contact";
+@import "custom/footer";
+
+// CONTACT
+@import "custom/main-contact";

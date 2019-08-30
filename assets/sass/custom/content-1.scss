@@ -1,0 +1,43 @@
+section{
+	&#content-1{
+		height: 450px;
+		padding: 95px 0;
+		background-color: #ffffff;
+
+		@media (max-width: 991px) and (min-width: 769px) {
+			height: 350px;
+			padding: 78px 0;
+		}
+
+		@media (max-width: 768px) {
+			padding: 60px 0;
+			height: auto;
+		}
+
+		h4{
+			font-family: $ff-main;
+			font-size: 36px;
+			font-weight: 300;
+			margin-bottom: 40px;
+
+			@media (max-width: 768px) {
+				font-size: 32px;
+			}
+		}
+
+		p{
+			text-align: center;
+			width: 630px;
+			margin: 0 auto;
+			font-family: $ff-main;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 32px;
+			color: #7e7e7e;
+
+			@media (max-width: 768px) {
+				font-size: 18px;
+			}
+		}
+	}
+}

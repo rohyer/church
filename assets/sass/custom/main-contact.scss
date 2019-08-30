@@ -1,0 +1,153 @@
+section{
+	&#contact-image{
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li{
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+#contact-ways{
+	float: left;
+	width: 100%;
+	padding: 95px 0;
+
+	#first-way{
+		float: left;
+		width: 48%;
+		padding-right: 80px;
+		border-right: 1px solid #b2b2b2;
+
+		@media (max-width: 991px) and (min-width: 768px){
+			padding-right: 30px;
+		}
+
+		#telephone{
+			padding-bottom: 30px;
+
+			h6{
+				font-family: $ff-main;
+				font-size: 24px;
+				font-weight: 300;
+				color: #277faf;
+			}
+
+			#number-telephone{
+				font-family: $ff-main;
+				font-size: 38px;
+				font-weight: 300;
+				color: #595959;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #b2b2b2;
+			}
+		}
+
+		#email{
+			padding-bottom: 30px;
+
+			h6{
+				font-family: $ff-main;
+				font-size: 24px;
+				font-weight: 300;
+				color: #277faf;
+			}
+
+			#contact-email{
+				font-family: $ff-main;
+				font-size: 38px;
+				font-weight: 300;
+				color: #595959;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #b2b2b2;
+			}
+		}
+
+		#social-medias{
+			h6{
+				font-family: $ff-main;
+				font-size: 24px;
+				font-weight: 300;
+				color: #277faf;
+			}
+		}
+	}
+
+	#second-way{
+		float: left;
+		width: 52%;
+		padding: 90px 0 0 80px;
+
+		@media (max-width: 991px) and (min-width: 768px){
+			padding: 90px 0 0 30px;
+		}
+
+		h6{
+			font-family: $ff-main;
+			font-size: 24px;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+
+		form{
+			margin: 0 auto;
+
+			label{
+				margin-right: 10px;
+				margin-bottom: 0;
+			}
+
+			input{
+				font-family: $ff-main;
+				font-weight: 300;
+				width: 380px;
+				height: 52px;
+				background-color: #f5f5f5;
+				border: none;
+				border-radius: 5px;
+				padding: 8px 20px;
+				transition-duration: .2s;
+
+				@media (max-width: 1200px) and (min-width: 992px){
+					width: 255px;
+				}
+
+				@media (max-width: 991px) and (min-width: 768px){
+					width: 315px;
+				}
+
+				&:focus{
+					outline: none;
+					border-color: #888888;
+					box-shadow: 0 0 0 1.5px #62e0e9;
+					background-color: #ffffff;
+					transition-duration: .2s;
+				}
+			}
+
+			button{
+				font-family: $ff-main;
+				font-size: 18px;
+				font-weight: 500;
+				width: 100px;
+				height: 52px;
+				color: #ffffff;
+				background-color: #62e0e9;
+				border: none;
+				border-radius: 5px;
+				letter-spacing: 1px;
+
+				@media (max-width: 992px) and (min-width: 768px){
+					margin: 15px 108px 0;
+				}
+			}
+		}
+	}
+}
