@@ -13639,7 +13639,8 @@ section#content-1 {
     color: #7e7e7e; }
     @media (max-width: 768px) {
       section#content-1 p {
-        font-size: 18px; } }
+        font-size: 18px;
+        width: auto; } }
 
 section#content-2 {
   position: relative;
@@ -13654,10 +13655,14 @@ section#content-2 {
     section#content-2 {
       height: 305px;
       padding: 40px 0; } }
-  @media (max-width: 991px) {
+  @media (max-width: 991px) and (min-width: 768px) {
     section#content-2 {
       height: 350px;
       padding: 70px 0; } }
+  @media (max-width: 767px) {
+    section#content-2 {
+      padding: 60px 0;
+      height: auto; } }
   section#content-2 #first-content-2 h4 {
     font-family: "roboto";
     font-size: 36px;
@@ -13703,10 +13708,14 @@ section#content-3 {
   height: auto;
   padding: 110px 0;
   background-color: #ffffff; }
-  @media (max-width: 991px) {
+  @media (max-width: 991px) and (min-width: 768px) {
     section#content-3 {
       height: 350px;
       padding: 70px 0; } }
+  @media (max-width: 767px) {
+    section#content-3 {
+      padding: 60px 0;
+      height: auto; } }
   section#content-3 #first-content-3 {
     width: auto;
     left: 0;
@@ -13767,19 +13776,36 @@ section#content-3 {
   #content-4 span#contact-message {
     position: absolute;
     left: 10%;
-    top: 160px;
+    top: 145px;
     width: 80%;
     text-align: center;
     color: #ffffff; }
+    @media (max-width: 710px) and (min-width: 591px) {
+      #content-4 span#contact-message {
+        top: 130px; } }
+    @media (max-width: 590px) {
+      #content-4 span#contact-message {
+        top: 105px; } }
     #content-4 span#contact-message h6 {
       font-family: "roboto";
       font-size: 50px;
       font-weight: 300;
       margin-bottom: 30px; }
+      @media (max-width: 830px) and (min-width: 711px) {
+        #content-4 span#contact-message h6 {
+          font-size: 42px;
+          font-weight: 400; } }
+      @media (max-width: 710px) {
+        #content-4 span#contact-message h6 {
+          font-size: 35px;
+          font-weight: 400; } }
     #content-4 span#contact-message p {
       font-family: "roboto";
       font-size: 22px;
       margin-bottom: 35px; }
+      @media (max-width: 710px) {
+        #content-4 span#contact-message p {
+          font-size: 20px; } }
     #content-4 span#contact-message a {
       font-family: "roboto";
       font-size: 22px;
@@ -13799,6 +13825,9 @@ section#content-contact {
   float: left;
   width: 100%;
   margin: 100px 0; }
+  @media (max-width: 767px) {
+    section#content-contact {
+      margin: 90px 0; } }
   section#content-contact h6 {
     font-family: "roboto";
     font-size: 24px;
@@ -13806,11 +13835,18 @@ section#content-contact {
     width: 100%;
     text-align: center;
     margin-bottom: 30px; }
+    @media (max-width: 567px) {
+      section#content-contact h6 {
+        font-size: 22px; } }
   section#content-contact form {
-    margin: 0 auto; }
+    text-align: center; }
     section#content-contact form label {
       margin-right: 10px;
       margin-bottom: 0; }
+      @media (max-width: 465px) {
+        section#content-contact form label {
+          margin-right: 0;
+          margin-bottom: 15px; } }
     section#content-contact form input {
       font-family: "roboto";
       font-weight: 300;
@@ -13821,6 +13857,9 @@ section#content-contact {
       border-radius: 5px;
       padding: 8px 20px;
       transition-duration: .2s; }
+      @media (max-width: 465px) {
+        section#content-contact form input {
+          width: 290px; } }
       section#content-contact form input:focus {
         outline: none;
         border-color: #888888;
@@ -13843,7 +13882,8 @@ section#content-contact {
   float: left;
   width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #f5f5f5; }
   #footer #footer-content {
     width: 100%; }
@@ -13852,7 +13892,6 @@ section#content-contact {
       float: left;
       width: 25%;
       list-style: none;
-      padding: 0;
       margin: 0; }
       @media (max-width: 991px) {
         #footer #footer-content ul {
@@ -13871,7 +13910,8 @@ section#content-contact {
           #footer #footer-content ul li a:hover {
             text-decoration: none; }
     #footer #footer-content iframe {
-      margin-left: 170px; }
+      margin-left: 170px;
+      padding: 0 15px; }
       @media (max-width: 1200px) and (min-width: 992px) {
         #footer #footer-content iframe {
           margin-left: 70px; } }
@@ -13879,6 +13919,9 @@ section#content-contact {
         #footer #footer-content iframe {
           margin-left: 0;
           margin-top: 30px; } }
+      @media (max-width: 500px) {
+        #footer #footer-content iframe {
+          width: 95%; } }
 
 section#contact-image ul {
   list-style: none;

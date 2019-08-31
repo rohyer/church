@@ -4,9 +4,14 @@ section{
 		padding: 110px 0;
 		background-color: #ffffff;
 
-		@media (max-width: 991px) {
+		@media (max-width: 991px) and (min-width: 768px) {
 			height: 350px;
 			padding: 70px 0;
+		}
+
+		@media (max-width: 767px) {
+			padding: 60px 0;
+			height: auto;
 		}
 
 		#first-content-3{
