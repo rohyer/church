@@ -19,10 +19,15 @@
 
 				<div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
 					<ul>
-						<li><a href="./index.php">Home</a></li>
-						<li><a href="#">Programas & Eventos</a></li>
-						<li><a href="./message.php">Mensagens</a></li>
-						<li><a href="./contact.php">Contato</a></li>
+					<?php
+					
+					wp_nav_menu(array(
+						'menu' => 'menu',
+
+						'theme_location' => 'menu',
+					));
+
+					?>
 					</ul>
 				</div>
 			</div>
