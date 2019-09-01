@@ -7079,8 +7079,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("../fonts/webfonts/fa-brands-400.eot");
-  src: url("../fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../sass/webfonts/fa-brands-400.eot");
+  src: url("../sass/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../sass/webfonts/fa-brands-400.woff2") format("woff2"), url("../sass/webfonts/fa-brands-400.woff") format("woff"), url("../sass/webfonts/fa-brands-400.ttf") format("truetype"), url("../sass/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
@@ -11375,8 +11375,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("../fonts/webfonts/fa-regular-400.eot");
-  src: url("../fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("../fonts/webfonts/fa-regular-400.woff") format("woff"), url("../fonts/webfonts/fa-regular-400.ttf") format("truetype"), url("../fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../sass/webfonts/fa-regular-400.eot");
+  src: url("../sass/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../sass/webfonts/fa-regular-400.woff2") format("woff2"), url("../sass/webfonts/fa-regular-400.woff") format("woff"), url("../sass/webfonts/fa-regular-400.ttf") format("truetype"), url("../sass/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
 .far {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
@@ -11390,8 +11390,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("../fonts/webfonts/fa-solid-900.eot");
-  src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../sass/webfonts/fa-solid-900.eot");
+  src: url("../sass/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../sass/webfonts/fa-solid-900.woff2") format("woff2"), url("../sass/webfonts/fa-solid-900.woff") format("woff"), url("../sass/webfonts/fa-solid-900.ttf") format("truetype"), url("../sass/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
@@ -14029,5 +14029,93 @@ section#contact-image ul {
         @media (max-width: 992px) and (min-width: 768px) {
           #contact-ways #second-way form button {
             margin: 15px 108px 0; } }
+
+section#page-contact {
+  float: left;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  @media (min-width: 768px) {
+    section#page-contact {
+      height: 550px; } }
+  section#page-contact #contact-form h6 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 30px; }
+    @media (max-width: 992px) and (min-width: 768px) {
+      section#page-contact #contact-form h6 {
+        font-size: 22px; } }
+  @media (min-width: 768px) {
+    section#page-contact #contact-form {
+      padding-right: 80px; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    section#page-contact #contact-form {
+      padding-right: 60px; } }
+  @media (max-width: 767px) {
+    section#page-contact #contact-form form {
+      margin-bottom: 30px; } }
+  section#page-contact #contact-form form input.input-contact {
+    font-family: "roboto";
+    font-weight: 300;
+    width: 100%;
+    height: 55px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    transition-duration: .2s; }
+    section#page-contact #contact-form form input.input-contact:focus {
+      outline: none;
+      border-color: #888888;
+      box-shadow: 0 0 0 1.5px #62e0e9;
+      background-color: #ffffff;
+      transition-duration: .2s; }
+  section#page-contact #contact-form form input[type="submit"] {
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 500;
+    width: 100px;
+    height: 52px;
+    color: #ffffff;
+    background-color: #62e0e9;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px; }
+    @media (max-width: 767px) {
+      section#page-contact #contact-form form input[type="submit"] {
+        width: 100%; } }
+  @media (min-width: 768px) {
+    section#page-contact #contact-contact {
+      padding-left: 80px;
+      border-left: 1px solid #cdcdcd; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    section#page-contact #contact-contact {
+      padding-left: 60px; } }
+  section#page-contact #contact-contact h6 {
+    font-size: 26px;
+    font-weight: 300; }
+    @media (max-width: 992px) and (min-width: 768px) {
+      section#page-contact #contact-contact h6 {
+        font-size: 22px; } }
+    @media (max-width: 767px) {
+      section#page-contact #contact-contact h6 {
+        font-size: 24px; } }
+  section#page-contact #contact-contact p {
+    font-size: 32px;
+    font-weight: 400;
+    color: #5dc7ce;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cdcdcd; }
+    @media (max-width: 992px) and (min-width: 768px) {
+      section#page-contact #contact-contact p {
+        font-size: 24px; } }
+    @media (max-width: 767px) {
+      section#page-contact #contact-contact p {
+        font-size: 26px; } }
+  section#page-contact #contact-contact a {
+    float: left;
+    margin-top: 10px; }
+    section#page-contact #contact-contact a i {
+      font-size: 35px; }
 
 /*# sourceMappingURL=style.css.map */
