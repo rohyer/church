@@ -24,35 +24,41 @@
 		#header-menu{
 			float: left;
 
-			ul{
+			.menu-menu-container{
 				float: left;
-				list-style: none;
-				margin: 23px 0 23px 88px;
 
-				@media (max-width: 1200px) and (min-width: 992px){
-					margin: 23px 0 23px 70px;
-				}
-
-				@media (max-width: 991px) and (min-width: 768px){
-					margin: 23px 0 23px 0px;
-				}
-
-				li{
-					font-size: 16px;
-					font-weight: 400;
+				ul{
 					float: left;
-					margin: 0 10px;
-
-					a{
-						color: #000000;
-						text-decoration: none;
-
-						&:hover{
+					list-style: none;
+					margin: 25px 0 25px 0;
+	
+					@media (max-width: 1200px) and (min-width: 992px){
+						margin: 25px 0 25px 0;
+					}
+	
+					@media (max-width: 991px) and (min-width: 768px){
+						margin: 25px 0 25px 0;
+					}
+	
+					li{
+						font-size: 16px;
+						font-weight: 400;
+						float: left;
+						margin: 0 10px;
+	
+						a{
 							color: #000000;
+							text-decoration: none;
+	
+							&:hover{
+								color: #000000;
+							}
 						}
 					}
 				}
 			}
+
+			
 		}
 		
 	}

@@ -13583,26 +13583,28 @@ readers do not read off random characters that represent icons */
         margin: 15px 0; }
     #header #header-content #header-menu {
       float: left; }
-      #header #header-content #header-menu ul {
-        float: left;
-        list-style: none;
-        margin: 23px 0 23px 88px; }
-        @media (max-width: 1200px) and (min-width: 992px) {
-          #header #header-content #header-menu ul {
-            margin: 23px 0 23px 70px; } }
-        @media (max-width: 991px) and (min-width: 768px) {
-          #header #header-content #header-menu ul {
-            margin: 23px 0 23px 0px; } }
-        #header #header-content #header-menu ul li {
-          font-size: 16px;
-          font-weight: 400;
+      #header #header-content #header-menu .menu-menu-container {
+        float: left; }
+        #header #header-content #header-menu .menu-menu-container ul {
           float: left;
-          margin: 0 10px; }
-          #header #header-content #header-menu ul li a {
-            color: #000000;
-            text-decoration: none; }
-            #header #header-content #header-menu ul li a:hover {
-              color: #000000; }
+          list-style: none;
+          margin: 25px 0 25px 0; }
+          @media (max-width: 1200px) and (min-width: 992px) {
+            #header #header-content #header-menu .menu-menu-container ul {
+              margin: 25px 0 25px 0; } }
+          @media (max-width: 991px) and (min-width: 768px) {
+            #header #header-content #header-menu .menu-menu-container ul {
+              margin: 25px 0 25px 0; } }
+          #header #header-content #header-menu .menu-menu-container ul li {
+            font-size: 16px;
+            font-weight: 400;
+            float: left;
+            margin: 0 10px; }
+            #header #header-content #header-menu .menu-menu-container ul li a {
+              color: #000000;
+              text-decoration: none; }
+              #header #header-content #header-menu .menu-menu-container ul li a:hover {
+                color: #000000; }
 
 section#main-image img {
   width: 100% !important;
@@ -14117,5 +14119,40 @@ section#page-contact {
     margin-top: 10px; }
     section#page-contact #contact-contact a i {
       font-size: 35px; }
+
+@media (min-width: 992px) {
+  section#schedules-events #invite-schedules-events {
+    height: 250px;
+    padding-top: 70px;
+    padding-bottom: 70px; } }
+section#schedules-events #invite-schedules-events h6 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 1px; }
+section#schedules-events #schedules #all-schedules {
+  padding: 0; }
+  section#schedules-events #schedules #all-schedules li.li-one-schedule {
+    list-style: none;
+    float: left;
+    width: 33.3%; }
+    section#schedules-events #schedules #all-schedules li.li-one-schedule ul.ul-one-schedule {
+      padding: 0; }
+      section#schedules-events #schedules #all-schedules li.li-one-schedule ul.ul-one-schedule li {
+        list-style: none;
+        background-size: cover;
+        float: left;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px; }
+        section#schedules-events #schedules #all-schedules li.li-one-schedule ul.ul-one-schedule li#cult {
+          background-image: url(../img/main-img/oracao.jpg); }
+        section#schedules-events #schedules #all-schedules li.li-one-schedule ul.ul-one-schedule li#communion {
+          background-image: url(../img/main-img/comunhao.jpg); }
+        section#schedules-events #schedules #all-schedules li.li-one-schedule ul.ul-one-schedule li#pray {
+          background-image: url(../img/main-img/oracao.jpg); }
+        section#schedules-events #schedules #all-schedules li.li-one-schedule ul.ul-one-schedule li#project {
+          background-image: url(../img/main-img/projeto.jpg);
+          background-position: 0px 270px; }
 
 /*# sourceMappingURL=style.css.map */
