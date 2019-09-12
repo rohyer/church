@@ -1,8 +1,9 @@
 section{
-    &#schedules-events{
+    &#main-schedules{
+        float: left;
+        width: 100%;
 
-        #invite-schedules-events{
-            
+        #title-schedules{
             @media (min-width: 992px) {
                 height: 250px;
                 padding-top: 70px;
@@ -13,52 +14,248 @@ section{
                 text-align: center;
                 font-size: 48px;
                 font-weight: 300;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
             }
         }
 
         #schedules{
+            float: left;
+            width: 100%;
 
-            #all-schedules{
+            ul{
+                list-style: none;
+                float: left;
+                width: 100%;
                 padding: 0;
 
                 li{
-                    &.li-one-schedule{
-                        list-style: none;
+                    &#first-three-schedules{
                         float: left;
-                        width: 33.3%;
+                        width: 100%;
 
                         ul{
-                            &.ul-one-schedule{
-                                padding: 0;
+                            list-style: none;
 
-                                li{
+                            li{
+                                &.li-one-schedule{
+                                    position: relative;
                                     list-style: none;
-                                    background-size: cover;
                                     float: left;
-                                    width: 100%;
-                                    height: 250px;
-                                    margin-bottom: 10px;
+                                    height: auto;
+                                    margin: 10px 15px;
 
-                                    &#cult{
-                                        background-image: url(../img/main-img/oracao.jpg);
+                                    &:before{
+                                        background-color: rgba(12, 20, 20, 0.4);
+                                        content: '';
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                    }
+            
+                                    img{
+                                        float: left;
+                                        width: 100%;
+                                        height: auto;
+                                        margin-right: 5%;
+                                    }
+            
+                                    span{
+                                        position: absolute;
+                                        top: 5px;
+                                        left: 15px;
+                                        font-size: 32px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 100%;
+                                        padding: 15px;
+                                    }
+            
+                                    p{
+                                        position: absolute;
+                                        top: 60px;
+                                        left: 15px;
+                                        font-size: 25px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 100%;
+                                        padding: 15px;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+
+                                &#cult{
+                                    width: 58%;
+
+                                    img{
+                                        object-fit: cover;
+                                        object-position: center;
+                                        width: 100%;
+                                        height: 480px;
                                     }
 
-                                    &#communion{
-                                        background-image: url(../img/main-img/comunhao.jpg);
+                                    span{
+                                        font-size: 40px;
                                     }
 
-                                    &#pray{
-                                        background-image: url(../img/main-img/oracao.jpg);
+                                    p{
+                                        font-size: 30px;
                                     }
+                                }
 
-                                    &#project{
-                                        background-image: url(../img/main-img/projeto.jpg);
-                                        background-position: 0px 270px;
+                                &#communion, &#pray{
+                                    width: 37%;
+
+                                    img{
+                                        object-fit: cover;
+                                        object-position: center;
+                                        width: 100%;
+                                        height: 230px;
+                                        margin-right: 0;
                                     }
                                 }
                             }
                         }
+                    }
+
+                    &#second-three-schedules{
+                        float: left;
+                        width: 100%;
+
+                        ul{
+                            li{
+                                &.li-one-schedule{
+                                    position: relative;
+                                    list-style: none;
+                                    float: left;
+                                    height: auto;
+                                    margin: 10px 15px;
+
+                                    &:before{
+                                        background-color: rgba(12, 20, 20, 0.4);
+                                        content: '';
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                    }
+            
+                                    img{
+                                        float: left;
+                                        width: 100%;
+                                        height: auto;
+                                        margin-right: 5%;
+                                    }
+            
+                                    span{
+                                        position: absolute;
+                                        top: 5px;
+                                        left: 15px;
+                                        font-size: 32px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 100%;
+                                        padding: 15px;
+                                    }
+            
+                                    p{
+                                        position: absolute;
+                                        top: 60px;
+                                        left: 15px;
+                                        font-size: 25px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 100%;
+                                        padding: 15px;
+                                    }
+                                }
+
+                                &#project{
+                                    width: 58%;
+
+                                    img{
+                                        object-fit: cover;
+                                        object-position: center;
+                                        width: 100%;
+                                        height: 480px;
+                                    }
+
+                                    span{
+                                        font-size: 40px;
+                                    }
+
+                                    p{
+                                        font-size: 30px;
+                                    }
+                                }
+
+                                &#young, &#school{
+                                    width: 37%;
+
+                                    img{
+                                        object-fit: cover;
+                                        object-position: center;
+                                        width: 100%;
+                                        height: 230px;
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section{
+    &#main-events{
+        float: left;
+        width: 100%;
+
+        #title-events{
+            @media (min-width: 992px) {
+                height: 250px;
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+
+            h6{
+                text-align: center;
+                font-size: 48px;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+        }
+
+        #events{
+            float: left;
+            width: 100%;
+
+            ul{
+                list-style: none;
+                float: left;
+                width: 100%;
+                padding: 0;
+
+                li{
+                    list-style: none;
+                    float: left;
+                    width: auto;
+                    height: auto;
+                    margin: 10px 15px;
+
+                    img{
+                        width: 100%;
                     }
                 }
             }
