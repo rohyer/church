@@ -128,27 +128,35 @@
         <div id="events">
             <div class="container-custom">
                 <div class="row">
-                    <ul class="owl-carousel owl-theme">
-                    <?php
-                    $args = array(
-                        'numberposts' => '10',
-                        'category_name' => 'eventos'
-                    );
-                    $query = new WP_Query($args);
-                    if ( $query->have_posts() ) {
-                        while ( $query->have_posts() ) { 
-                            $query->the_post() 
-                    ?>
-                    <li>
-                        <?php the_post_thumbnail() ?>
-                        <span><?php the_title() ?></span>
-                        <?php the_content() ?>
-                    </li>
-                    <?php
+                    <div class="col-12">
+                        <ul class="owl-carousel owl-theme">
+                        <?php
+                        $args = array(
+                            'numberposts' => '10',
+                            'category_name' => 'eventos'
+                        );
+                        $query = new WP_Query($args);
+                        if ( $query->have_posts() ) {
+                            while ( $query->have_posts() ) { 
+                                $query->the_post() 
+                        ?>
+                        <li class="event-post d-flex justify-content-around">
+                            <?php the_post_thumbnail() ?>
+
+                            <div class="event-open d-flex justify-content-center">
+                                <i class="fas fa-arrow-circle-up"></i>
+                                <div class="event-content">
+                                    <span><?php the_title() ?></span>
+                                    <p><?php the_content() ?></p>
+                                </div>
+                            </div>
+                        </li>
+                        <?php
+                            }
                         }
-                    }
-                    ?>
-                    </ul>
+                        ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

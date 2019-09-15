@@ -14141,11 +14141,11 @@ section#page-contact {
 
 section#main-schedules {
   float: left;
-  width: 100%; }
+  width: 100%;
+  padding-top: 80px; }
   @media (min-width: 992px) {
     section#main-schedules #title-schedules {
-      height: 250px;
-      padding-top: 70px;
+      height: auto;
       padding-bottom: 70px; } }
   section#main-schedules #title-schedules h6 {
     text-align: center;
@@ -14290,12 +14290,13 @@ section#main-schedules {
 
 section#main-events {
   float: left;
-  width: 100%; }
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 115px; }
   @media (min-width: 992px) {
     section#main-events #title-events {
-      height: 250px;
-      padding-top: 70px;
-      padding-bottom: 70px; } }
+      height: auto;
+      padding-bottom: 80px; } }
   section#main-events #title-events h6 {
     text-align: center;
     font-size: 48px;
@@ -14309,13 +14310,49 @@ section#main-events {
       float: left;
       width: 100%;
       padding: 0; }
-      section#main-events #events ul li {
+      section#main-events #events ul li.event-post {
+        position: relative;
         list-style: none;
         float: left;
         width: auto;
-        height: auto;
-        margin: 10px 15px; }
-        section#main-events #events ul li img {
-          width: 100%; }
+        height: auto; }
+        section#main-events #events ul li.event-post .event-open {
+          position: absolute;
+          text-align: center;
+          width: 40px;
+          height: 40px;
+          left: 46%;
+          bottom: 10px; }
+          section#main-events #events ul li.event-post .event-open .event-content {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            top: 60px;
+            left: -163px;
+            width: 360px;
+            height: auto;
+            padding: 25px 30px;
+            text-align: left;
+            background-color: #ffffff;
+            transition-duration: .6s; }
+          section#main-events #events ul li.event-post .event-open:hover .event-content {
+            visibility: visible;
+            position: absolute;
+            top: -200px;
+            left: -163px;
+            width: 360px;
+            padding: 25px 30px;
+            height: auto;
+            text-align: left;
+            background-color: #ffffff; }
+          section#main-events #events ul li.event-post .event-open i {
+            font-size: 27px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px; }
+      section#main-events #events ul li img {
+        width: 90%;
+        height: auto; }
 
 /*# sourceMappingURL=style.css.map */
