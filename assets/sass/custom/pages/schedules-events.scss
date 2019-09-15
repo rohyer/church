@@ -255,55 +255,58 @@ section{
                         float: left;
                         width: auto;
                         height: auto;
+                        margin: 0 15px;
 
-                        .event-open{
-                            position: absolute;
-                            text-align: center;
-                            width: 40px;
-                            height: 40px;
-                            left: 46%;
-                            bottom: 10px;
-
-                            .event-content{
-                                visibility: hidden;
+                        &.event-post-before{
+                            &:before{
+                                background-color: rgba(12, 20, 20, 0.50);
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 100%;
                                 position: absolute;
-                                top: 0;
                                 left: 0;
-                                top: 60px;
-                                left: -163px;
-                                width: 360px;
-                                height: auto;
-                                padding: 25px 30px;
-                                text-align: left;
-                                background-color: #ffffff;
-                                transition-duration: .6s;
+                                top: 0;
                             }
+                        }
 
-                            // &:hover{
-                            //     .event-content{
-                            //         visibility: visible;
-                            //         position: absolute;
-                            //         top: -200px;
-                            //         left: -163px;
-                            //         width: 360px;
-                            //         padding: 25px 30px;
-                            //         height: auto;
-                            //         text-align: left;
-                            //         background-color: #ffffff;
-                            //     }
-                            // }                            
+                        .open-content-event{
+                            position: absolute;
+                            bottom: 15px;
 
                             i{
-                                font-size: 27px;
-                                padding-top: 10px;
-                                padding-right: 10px;
-                                padding-left: 10px;
+                                font-size: 25px;
+                                transform: rotate(270deg);
                             }
+                        }
+
+                        .close-content-event{
+                            display: none;
+                            position: absolute;
+                            bottom: 15px;
+                            color: #eeeeee;
+
+                            i{
+                                font-size: 25px;
+                            }
+                        }
+
+                        .event-content{
+                            visibility: hidden;
+                            position: absolute;
+                            left: 17px;
+                            width: 360px;
+                            top: 420px;
+                            height: auto;
+                            padding: 25px 30px;
+                            text-align: left;
+                            background-color: #ffffff;
+                            transition-duration: .6s;                           
                         }
                     }
 
                     img{
-                        width: 90%;
+                        width: 100%;
                         height: auto;
                     }
                 }

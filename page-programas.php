@@ -142,13 +142,18 @@
                         ?>
                         <li class="event-post d-flex justify-content-around">
                             <?php the_post_thumbnail() ?>
+                            
+                            <div class="open-content-event" onclick="openEvent()">
+                                <i class="event-plus fas fa-plus"></i>
+                            </div>
 
-                            <div class="event-open d-flex justify-content-center" onclick="clickEvents()">
-                                <i class="fas fa-arrow-circle-up"></i>
-                                <div class="event-content">
-                                    <span><?php the_title() ?></span>
-                                    <p><?php the_content() ?></p>
-                                </div>
+                            <div class="close-content-event" onclick="closeEvent()">
+                                <i class="fas fa-times"></i>
+                            </div>
+
+                            <div class="event-content d-flex justify-content-center">
+                                <span><?php the_title() ?></span>
+                                <p><?php the_content() ?></p>
                             </div>
                         </li>
                         <?php
