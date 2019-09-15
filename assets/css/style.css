@@ -14336,16 +14336,6 @@ section#main-events {
             text-align: left;
             background-color: #ffffff;
             transition-duration: .6s; }
-          section#main-events #events ul li.event-post .event-open:hover .event-content {
-            visibility: visible;
-            position: absolute;
-            top: -200px;
-            left: -163px;
-            width: 360px;
-            padding: 25px 30px;
-            height: auto;
-            text-align: left;
-            background-color: #ffffff; }
           section#main-events #events ul li.event-post .event-open i {
             font-size: 27px;
             padding-top: 10px;

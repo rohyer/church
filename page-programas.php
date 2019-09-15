@@ -143,7 +143,7 @@
                         <li class="event-post d-flex justify-content-around">
                             <?php the_post_thumbnail() ?>
 
-                            <div class="event-open d-flex justify-content-center">
+                            <div class="event-open d-flex justify-content-center" onclick="clickEvents()">
                                 <i class="fas fa-arrow-circle-up"></i>
                                 <div class="event-content">
                                     <span><?php the_title() ?></span>

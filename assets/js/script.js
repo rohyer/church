@@ -55,3 +55,15 @@ $('#schedules ul').owlCarousel({
 		}
 	}
 });
+
+
+function clickEvents() {
+	var eventContent = document.getElementsByClassName("event-content");
+	var i;
+	for (i = 0; i < eventContent.length; i++) {
+		eventContent[i].style.visibility = "visible";
+		eventContent[i].style.top = "-200px";
+		eventContent[i].style.left = "-163px";
+	}
+	
+}
