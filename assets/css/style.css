@@ -14311,47 +14311,48 @@ section#main-events {
       width: 100%;
       padding: 0; }
       section#main-events #events ul li.event-post {
-        position: relative;
         list-style: none;
         float: left;
         width: auto;
         height: auto;
-        margin: 0 15px; }
-        section#main-events #events ul li.event-post.event-post-before:before {
-          background-color: rgba(12, 20, 20, 0.5);
+        margin: 0 18px; }
+        section#main-events #events ul li.event-post .event-content {
+          width: auto;
+          height: auto;
+          text-align: left;
+          margin-top: 10px; }
+          section#main-events #events ul li.event-post .event-content span {
+            font-size: 28px;
+            font-weight: 400;
+            text-align: left; }
+          section#main-events #events ul li.event-post .event-content p {
+            font-size: 18px;
+            font-weight: 300;
+            text-align: justify;
+            margin-top: 10px; }
+      section#main-events #events ul li .event-img {
+        position: relative;
+        transition-duration: .5s; }
+        section#main-events #events ul li .event-img img {
+          width: 100%;
+          height: 100%; }
+        section#main-events #events ul li .event-img:before {
+          background-color: rgba(12, 20, 20, 0);
           content: '';
-          display: block;
+          visibility: hidden;
           width: 100%;
           height: 100%;
           position: absolute;
           left: 0;
           top: 0; }
-        section#main-events #events ul li.event-post .open-content-event {
+        section#main-events #events ul li .event-img:hover:before {
+          background-color: rgba(12, 20, 20, 0.5);
+          content: '';
+          visibility: visible;
+          width: 100%;
+          height: 100%;
           position: absolute;
-          bottom: 15px; }
-          section#main-events #events ul li.event-post .open-content-event i {
-            font-size: 25px;
-            transform: rotate(270deg); }
-        section#main-events #events ul li.event-post .close-content-event {
-          display: none;
-          position: absolute;
-          bottom: 15px;
-          color: #eeeeee; }
-          section#main-events #events ul li.event-post .close-content-event i {
-            font-size: 25px; }
-        section#main-events #events ul li.event-post .event-content {
-          visibility: hidden;
-          position: absolute;
-          left: 17px;
-          width: 360px;
-          top: 420px;
-          height: auto;
-          padding: 25px 30px;
-          text-align: left;
-          background-color: #ffffff;
-          transition-duration: .6s; }
-      section#main-events #events ul li img {
-        width: 100%;
-        height: auto; }
+          left: 0;
+          top: 0; }
 
 /*# sourceMappingURL=style.css.map */

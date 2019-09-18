@@ -140,20 +140,14 @@
                             while ( $query->have_posts() ) { 
                                 $query->the_post() 
                         ?>
-                        <li class="event-post d-flex justify-content-around">
-                            <?php the_post_thumbnail() ?>
-                            
-                            <div class="open-content-event" onclick="openEvent()">
-                                <i class="event-plus fas fa-plus"></i>
+                        <li id="post-<?php the_ID() ?>" class="event-post">
+                            <div class="event-img">
+                                <?php the_post_thumbnail() ?>
                             </div>
-
-                            <div class="close-content-event" onclick="closeEvent()">
-                                <i class="fas fa-times"></i>
-                            </div>
-
-                            <div class="event-content d-flex justify-content-center">
+                            <a href="<?php the_permalink() ?>">Saiba mais</a>
+                            <div class="event-content">
                                 <span><?php the_title() ?></span>
-                                <p><?php the_content() ?></p>
+                                <?php the_content() ?>
                             </div>
                         </li>
                         <?php
