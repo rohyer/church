@@ -17,7 +17,7 @@
             <div class="container-custom">
                 <div class="row">
                     <ul class="owl-carousel owl-theme">
-                        <li id="first-three-schedules" class="li-one-schedule">
+                        <li id="first-three-schedules" class="abcde li-one-schedule">
                             <ul>
                                 <li id="cult" class="li-one-schedule">
                                 <?php
@@ -143,8 +143,8 @@
                         <li id="post-<?php the_ID() ?>" class="event-post">
                             <div class="event-img">
                                 <?php the_post_thumbnail() ?>
+                                <a href="<?php the_permalink() ?>">Saiba mais</a>
                             </div>
-                            <a href="<?php the_permalink() ?>">Saiba mais</a>
                             <div class="event-content">
                                 <span><?php the_title() ?></span>
                                 <?php the_content() ?>

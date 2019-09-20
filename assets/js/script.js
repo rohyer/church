@@ -25,11 +25,11 @@ $('#events ul').owlCarousel({
 			items: 1,
 			nav: true
 		},
-		600:{
+		768:{
 			items: 2,
 			nav: true
 		},
-		1000:{
+		992:{
 			items: 3,
 			nav: true
 		}
@@ -55,6 +55,14 @@ $('#schedules ul').owlCarousel({
 		}
 	}
 });
+
+document.getElementById("first-three-schedules").remove();
+
+// var a = document.getElementsByClassName("abcde")
+// a.classList.remove("abcde");
+// for (i = 0; i < a.length; i++) {
+// 	a.classList.remove("abcde");
+// }
 
 
 // function openEvent() {
