@@ -33,7 +33,7 @@
                                 <?php } ?>
                                 </li>
 
-                                <li id="communion" class="li-one-schedule">
+                                <li id="communion" class="li-one-schedule d-flex justify-content-around">
                                 <?php
                                 $args = array('p' => '52');
                                 $query = new WP_Query($args);
@@ -47,7 +47,7 @@
                                 <?php } ?>
                                 </li>
 
-                                <li id="pray" class="li-one-schedule">
+                                <li id="pray" class="li-one-schedule d-flex justify-content-end">
                                 <?php
                                 $args = array('p' => '56');
                                 $query = new WP_Query($args);
