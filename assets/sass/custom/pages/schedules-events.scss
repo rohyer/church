@@ -4,10 +4,28 @@ section{
         width: 100%;
         padding-top: 80px;
 
+        @media (max-width: 992px) and (min-width: 769px) {
+            padding-top: 55px;
+        }
+
+        @media (max-width: 768px) {
+            padding-top: 50px;
+        }
+
         #title-schedules{
             @media (min-width: 992px) {
                 height: auto;
-                padding-bottom: 70px;
+                padding-bottom: 60px;
+            }
+
+            @media (max-width: 991px) and (min-width: 577px) {
+                height: auto;
+                padding-bottom: 32px;
+            }
+
+            @media (max-width: 576px) {
+                height: auto;
+                padding-bottom: 25px;
             }
 
             h6{
@@ -100,7 +118,7 @@ section{
                                 }
 
                                 &#cult{
-                                    margin: 10px 15px;
+                                    margin: 15px 15px 10px;
 
                                     @media (min-width: 1200px) {
                                         width: 58%;
@@ -143,13 +161,13 @@ section{
 
                                     @media (min-width: 992px) {
                                         float: right;
-                                        margin-top: 10px;
+                                        margin-top: 15px;
                                         margin-bottom: 10px;
                                         margin-right: 15px;
                                     }
 
                                     @media(max-width: 991px) and (min-width: 768px) {
-                                        width: 46.6%;
+                                        width: 47.5%;
                                     }
 
                                     @media(max-width: 768px) and (min-width: 577px) {
@@ -170,28 +188,22 @@ section{
                                 }
 
                                 &#communion{
-                                    @media(max-width: 991px) and (min-width: 769px) {
-                                        float: left;
-                                        margin-top: 5px;
+                                    @media (min-width: 992px) {
                                         margin-bottom: 5px;
-                                        margin-left: 15px;
                                     }
 
-                                    @media(max-width: 768px) and (min-width: 577px) {
-                                        margin: 0px 6px 10px 15px;
+                                    @media(max-width: 991px) and (min-width: 577px) {
+                                        float: left;
+                                        margin-bottom: 5px;
+                                        margin-left: 15px;
                                     }
                                 }
 
                                 &#pray{
-                                    @media(max-width: 991px) and (min-width: 769px) {
+                                    @media(max-width: 991px) and (min-width: 577px) {
                                         float: right;
-                                        margin-top: 5px;
                                         margin-bottom: 5px;
                                         margin-right: 15px;
-                                    }
-
-                                    @media(max-width: 768px) and (min-width: 577px) {
-                                        margin: 0px 15px 10px 6px;
                                     }
                                 }
                             }
@@ -266,7 +278,7 @@ section{
                                 }
 
                                 &#project{
-                                    margin: 10px 15px;
+                                    margin: 15px 15px 10px;
                                     
                                     @media (min-width: 1200px) {
                                         width: 58%;
@@ -308,13 +320,13 @@ section{
 
                                     @media (min-width: 992px) {
                                         float: right;
-                                        margin-top: 10px;
+                                        margin-top: 15px;
                                         margin-bottom: 10px;
                                         margin-right: 15px;
                                     }
 
                                     @media(max-width: 991px) and (min-width: 768px) {
-                                        width: 46.6%;
+                                        width: 47.5%;
                                     }
 
                                     @media(max-width: 768px) and (min-width: 577px) {
@@ -335,30 +347,100 @@ section{
                                 }
 
                                 &#school{
-                                    @media(max-width: 991px) and (min-width: 769px) {
-                                        float: left;
-                                        margin-top: 5px;
+                                    @media (min-width: 992px) {
                                         margin-bottom: 5px;
-                                        margin-left: 15px;
                                     }
 
-                                    @media(max-width: 768px) and (min-width: 577px) {
-                                        margin: 0px 6px 10px 15px;
+                                    @media(max-width: 991px) and (min-width: 577px) {
+                                        float: left;
+                                        margin-bottom: 5px;
+                                        margin-left: 15px;
                                     }
                                 }
 
                                 &#young{
-                                    @media(max-width: 991px) and (min-width: 769px) {
+                                    @media(max-width: 991px) and (min-width: 577px) {
                                         float: right;
-                                        margin-top: 5px;
                                         margin-bottom: 5px;
                                         margin-right: 15px;
                                     }
-
-                                    @media(max-width: 768px) and (min-width: 577px) {
-                                        margin: 0px 15px 10px 6px;
-                                    }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #schedules-responsive{
+            float: left;
+            width: 100%;
+
+            ul{
+                list-style: none;
+                float: left;
+                width: 100%;
+                padding: 0;
+
+                li{
+                    &.li-one-schedule-responsive{
+                        position: relative;
+                        list-style: none;
+                        float: left;
+                        height: auto;
+                        margin: 15px 0;
+
+                        &:before{
+                            background-color: rgba(12, 20, 20, 0.4);
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        img{
+                            float: left;
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        span{
+                            position: absolute;
+                            top: 5px;
+                            left: 15px;
+                            font-size: 32px;
+                            font-weight: 300;
+                            color: #ffffff;
+                            float: left;
+                            width: 100%;
+                            padding: 15px;
+
+                            @media(max-width: 768px) and (min-width: 577px) {
+                                font-size: 28px;
+                                left: 0;
+                                padding: 15px 12px 15px 12px;
+                            }
+                        }
+
+                        p{
+                            position: absolute;
+                            top: 60px;
+                            left: 15px;
+                            font-size: 25px;
+                            font-weight: 300;
+                            color: #ffffff;
+                            float: left;
+                            width: 100%;
+                            padding: 15px;
+                            letter-spacing: 1px;
+
+                            @media(max-width: 768px) and (min-width: 577px) {
+                                font-size: 25px;
+                                left: 0;
+                                padding: 15px 12px 15px 12px;
                             }
                         }
                     }
@@ -372,23 +454,31 @@ section{
     &#main-events{
         float: left;
         width: 100%;
-        padding-top: 65px;
+        padding-top: 80px;
         padding-bottom: 115px;
 
+        @media (max-width: 992px) and (min-width: 769px) {
+            padding-top: 55px;
+        }
+
+        @media (max-width: 768px) {
+            padding-top: 50px;
+        }
+
         #title-events{
-            @media (min-width: 1200px) {
+            @media (min-width: 992px) {
                 height: auto;
-                padding-bottom: 80px;
+                padding-bottom: 60px;
             }
 
-            @media (min-width: 992px) and (max-width: 1199px) {
+            @media (max-width: 991px) and (min-width: 577px) {
                 height: auto;
-                padding-bottom: 50px;
+                padding-bottom: 32px;
             }
 
-            @media (max-width: 991px) {
+            @media (max-width: 576px) {
                 height: auto;
-                padding-bottom: 30px;
+                padding-bottom: 25px;
             }
 
             h6{
@@ -415,7 +505,7 @@ section{
                         float: left;
                         width: auto;
                         height: auto;
-                        margin: 0 18px;
+                        margin: 15px;
 
                         .event-content{
                             width: auto;
@@ -448,7 +538,7 @@ section{
 
                         a{
                             position: absolute;
-                            top: 50%;
+                            top: 45%;
                             width: 100%;
                             text-align: center;
                             visibility: hidden;
@@ -467,6 +557,10 @@ section{
                             left: 0;
                             top: 0;
                             transition-duration: .4s;
+
+                            @media (max-width: 768px) {
+                                display: none;
+                            }
                         }
 
                         &:hover{
@@ -474,6 +568,7 @@ section{
                                 visibility: visible;
                                 color: rgb(255, 255, 255);
                             }
+
                             &:before{
                                 background-color: rgba(12, 20, 20, 0.50);
                                 content: '';

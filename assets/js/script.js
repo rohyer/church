@@ -36,6 +36,21 @@ $('#events ul').owlCarousel({
 	}
 });
 
+$('#schedules-responsive ul').owlCarousel({
+	items: 1,
+	loop: true,
+	autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+	reponsiveClass: true,
+	responsive:{
+		0:{
+			items: 1,
+			nav: true
+		}
+	}
+});
+
 
 $('#schedules ul').owlCarousel({
 	loop: false,
