@@ -14560,4 +14560,44 @@ section#main-events {
           left: 0;
           top: 0; }
 
+section#page-messages {
+  float: left;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 115px; }
+  @media (max-width: 992px) and (min-width: 769px) {
+    section#page-messages {
+      padding-top: 55px; } }
+  @media (max-width: 768px) {
+    section#page-messages {
+      padding-top: 50px; } }
+  @media (min-width: 992px) {
+    section#page-messages #title-messages {
+      height: auto;
+      padding-bottom: 60px; } }
+  @media (max-width: 991px) and (min-width: 577px) {
+    section#page-messages #title-messages {
+      height: auto;
+      padding-bottom: 32px; } }
+  @media (max-width: 576px) {
+    section#page-messages #title-messages {
+      height: auto;
+      padding-bottom: 25px; } }
+  section#page-messages #title-messages h6 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px; }
+  section#page-messages #messages ul {
+    list-style: none;
+    padding: 0; }
+    section#page-messages #messages ul li.message-post {
+      margin: 15px; }
+      section#page-messages #messages ul li.message-post .message-img img {
+        width: 100%;
+        height: auto; }
+      section#page-messages #messages ul li.message-post .message-content span {
+        font-size: 30px;
+        text-align: left; }
+
 /*# sourceMappingURL=style.css.map */

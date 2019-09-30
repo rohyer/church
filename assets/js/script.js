@@ -71,6 +71,29 @@ $('#schedules ul').owlCarousel({
 	}
 });
 
+$('#messages ul').owlCarousel({
+	items: 1,
+	loop: false,
+	autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+	reponsiveClass: true,
+	responsive:{
+		0:{
+			items: 1,
+			nav: true
+		},
+		600:{
+			items: 1,
+			nav: true
+		},
+		1000:{
+			items: 3,
+			nav: true
+		}
+	}
+});
+
 document.getElementById("first-three-schedules").remove();
 
 // var a = document.getElementsByClassName("abcde")
