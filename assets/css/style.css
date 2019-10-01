@@ -13662,6 +13662,8 @@ section#content-1 {
       section#content-1 p {
         font-size: 18px;
         width: auto; } }
+  section#content-1.show {
+    opacity: 0; }
 
 section#content-2 {
   position: relative;
@@ -13724,6 +13726,8 @@ section#content-2 {
       @media (max-width: 1099px) and (min-width: 992px) {
         section#content-2 #second-content-2 img {
           width: 500px; } }
+  section#content-2.show {
+    opacity: 0; }
 
 section#content-3 {
   height: auto;
@@ -13769,22 +13773,24 @@ section#content-3 {
         section#content-3 #second-content-3 p {
           font-size: 18px;
           text-align: center; } }
+  section#content-3.show {
+    opacity: 0; }
 
-#content-4 {
+section#content-4 {
   position: relative;
   float: left;
   width: 100%; }
-  #content-4 span#img-eventos {
+  section#content-4 span#img-eventos {
     position: relative;
     float: left;
     width: 100%;
     height: 440px; }
-    #content-4 span#img-eventos#img-eventos {
+    section#content-4 span#img-eventos#img-eventos {
       background-image: url("../img/eventos/evento-77.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
-    #content-4 span#img-eventos:before {
+    section#content-4 span#img-eventos:before {
       background-color: rgba(37, 37, 37, 0.55);
       content: '';
       display: block;
@@ -13794,7 +13800,7 @@ section#content-3 {
       left: 0;
       top: 0;
       transition-duration: 0.3s; }
-  #content-4 span#contact-message {
+  section#content-4 span#contact-message {
     position: absolute;
     left: 10%;
     top: 145px;
@@ -13802,32 +13808,32 @@ section#content-3 {
     text-align: center;
     color: #ffffff; }
     @media (max-width: 710px) and (min-width: 591px) {
-      #content-4 span#contact-message {
+      section#content-4 span#contact-message {
         top: 130px; } }
     @media (max-width: 590px) {
-      #content-4 span#contact-message {
+      section#content-4 span#contact-message {
         top: 105px; } }
-    #content-4 span#contact-message h6 {
+    section#content-4 span#contact-message h6 {
       font-family: "roboto";
       font-size: 50px;
       font-weight: 300;
       margin-bottom: 30px; }
       @media (max-width: 830px) and (min-width: 711px) {
-        #content-4 span#contact-message h6 {
+        section#content-4 span#contact-message h6 {
           font-size: 42px;
           font-weight: 400; } }
       @media (max-width: 710px) {
-        #content-4 span#contact-message h6 {
+        section#content-4 span#contact-message h6 {
           font-size: 35px;
           font-weight: 400; } }
-    #content-4 span#contact-message p {
+    section#content-4 span#contact-message p {
       font-family: "roboto";
       font-size: 22px;
       margin-bottom: 35px; }
       @media (max-width: 710px) {
-        #content-4 span#contact-message p {
+        section#content-4 span#contact-message p {
           font-size: 20px; } }
-    #content-4 span#contact-message a {
+    section#content-4 span#contact-message a {
       font-family: "roboto";
       font-size: 22px;
       font-weight: 300;
@@ -13836,7 +13842,7 @@ section#content-3 {
       padding: 7px 25px;
       color: #ffffff;
       transition-duration: .2s; }
-      #content-4 span#contact-message a:hover {
+      section#content-4 span#contact-message a:hover {
         text-decoration: none;
         background-color: #ffffff;
         color: #5e5e5e;
@@ -13898,6 +13904,8 @@ section#content-contact {
       border: none;
       border-radius: 5px;
       letter-spacing: 1px; }
+  section#content-contact.show {
+    opacity: 0; }
 
 #footer {
   float: left;
@@ -14592,12 +14600,27 @@ section#page-messages {
     list-style: none;
     padding: 0; }
     section#page-messages #messages ul li.message-post {
-      margin: 15px; }
+      margin: 10px;
+      padding: 15px;
+      transition-duration: .3s; }
+      @media (max-width: 991px) {
+        section#page-messages #messages ul li.message-post {
+          box-shadow: 0px 0px 10px #cdcdcd; } }
+      @media (min-width: 992px) {
+        section#page-messages #messages ul li.message-post:hover {
+          box-shadow: 0px 0px 10px #cdcdcd; } }
       section#page-messages #messages ul li.message-post .message-img img {
         width: 100%;
         height: auto; }
+      section#page-messages #messages ul li.message-post .message-content time {
+        float: left;
+        width: 100%;
+        font-size: 15px;
+        margin-top: 5px; }
       section#page-messages #messages ul li.message-post .message-content span {
         font-size: 30px;
         text-align: left; }
+      section#page-messages #messages ul li.message-post .message-content p {
+        margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

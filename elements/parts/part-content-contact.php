@@ -1,4 +1,4 @@
-<section id="content-contact">
+<section id="content-contact" class="show">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

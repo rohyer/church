@@ -1,4 +1,4 @@
-<section id="content-2">
+<section id="content-2" class="show">
 	<div class="container">
 		<div class="row">
 

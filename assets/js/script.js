@@ -83,15 +83,29 @@ $('#messages ul').owlCarousel({
 			items: 1,
 			nav: true
 		},
-		600:{
-			items: 1,
+		768:{
+			items: 2,
 			nav: true
 		},
-		1000:{
+		992:{
 			items: 3,
 			nav: true
 		}
 	}
+});
+
+$(window).on("load scroll", function(){
+    $(".show").each(function(){
+        var el = $(this);
+        var eleHeight = el.outerHeight(); // altura da div
+        var eleTopo = el.offset().top; // distancia da div ao topo do documento
+        var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
+        var distance = eleTopo-scrlTopo; // distancia da div ao topo da janela
+        var altJanela = window.innerHeight; // altura da janela
+        if(distance <= altJanela-(eleHeight/3)) {
+            el.animate({ 'opacity': 1 }, 400);
+        }
+    });
 });
 
 document.getElementById("first-three-schedules").remove();

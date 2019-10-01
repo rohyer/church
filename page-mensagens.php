@@ -36,12 +36,15 @@
                                     <?php the_post_thumbnail(); ?>
                                 </div>
                                 <div class="message-content">
+                                    <time datetime="<?php the_time('c'); ?>">
+                                        <?php the_time('d \d\e F \d\e Y'); ?>
+                                    </time>
                                     <span><?php the_title(); ?></span>
                                     <?php
                                     $excerpt = get_the_excerpt();
-                                    $excerpt = substr( $excerpt, 0, 100 );
+                                    $excerpt = substr( $excerpt, 0, 95 );
                                     ?>
-                                    <p><?php echo $excerpt . '...'; ?>
+                                    <p><?php echo $excerpt . '...'; ?></p><a href="<?php the_permalink(); ?>">ver mais</a>
                                 </div>
                             </li>
 

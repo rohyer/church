@@ -40,5 +40,9 @@ section{
 				width: auto;
 			}
 		}
+
+		&.show{
+			opacity: 0;
+		}
 	}
 }
