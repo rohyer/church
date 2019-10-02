@@ -1,0 +1,39 @@
+section{
+    &.post-content{
+        margin: 95px 0;
+
+        h1{
+            font-family: "roboto";
+            font-size: 36px;
+            font-weight: 300;
+            margin-bottom: 40px;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+
+            @media (max-width: 420px) {
+                font-size: 27px;
+            }
+        }
+
+        img{
+            float: left;
+            width: 100%;
+            height: auto;
+
+            @media (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 300;
+
+            @media (max-width: 991px) {
+                text-align: justify;
+            }
+        }
+    }
+}

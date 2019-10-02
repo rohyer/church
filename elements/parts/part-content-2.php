@@ -15,7 +15,7 @@
 		?>
 
 			<div id="first-content-2" class="col-12 col-lg-5">
-				<h4 class="text-center"><?php the_title(); ?></h4>
+				<h4 class="text-left"><?php the_title(); ?></h4>
 				<?php the_content(); ?>
 			</div>
 

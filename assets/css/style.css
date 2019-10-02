@@ -13600,6 +13600,9 @@ readers do not read off random characters that represent icons */
         color: #000000;
         letter-spacing: 0.5px;
         margin: 15px 0; }
+        #header #header-content #logo h1 a {
+          text-decoration: none;
+          color: initial; }
     #header #header-content #header-menu {
       float: left; }
       #header #header-content #header-menu .menu-menu-container {
@@ -13630,7 +13633,7 @@ section#main-image img {
   height: 550px !important; }
 
 section#content-1 {
-  height: 450px;
+  height: auto;
   padding: 95px 0;
   background-color: #ffffff; }
   @media (max-width: 991px) and (min-width: 769px) {
@@ -13749,8 +13752,14 @@ section#content-3 {
     section#content-3 #first-content-3 img {
       width: 585px;
       height: auto; }
+      @media (max-width: 1199px) and (min-width: 992px) {
+        section#content-3 #first-content-3 img {
+          width: 465px; } }
   section#content-3 #second-content-3 {
     margin-top: 55px; }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      section#content-3 #second-content-3 {
+        margin-top: 30px; } }
     @media (max-width: 991px) {
       section#content-3 #second-content-3 {
         margin-top: 0; } }
@@ -13851,10 +13860,10 @@ section#content-4 {
 section#content-contact {
   float: left;
   width: 100%;
-  margin: 100px 0; }
+  margin: 100px 0 80px; }
   @media (max-width: 767px) {
     section#content-contact {
-      margin: 90px 0; } }
+      margin: 90px 0 70px; } }
   section#content-contact h6 {
     font-family: "roboto";
     font-size: 24px;
@@ -13866,7 +13875,14 @@ section#content-contact {
       section#content-contact h6 {
         font-size: 22px; } }
   section#content-contact form {
-    text-align: center; }
+    text-align: center;
+    margin: 15px auto; }
+    @media (min-width: 481px) {
+      section#content-contact form {
+        width: 400px; } }
+    @media (max-width: 480px) {
+      section#content-contact form {
+        width: 100%; } }
     section#content-contact form label {
       margin-right: 10px;
       margin-bottom: 0; }
@@ -13877,13 +13893,21 @@ section#content-contact {
     section#content-contact form input {
       font-family: "roboto";
       font-weight: 300;
-      width: 320px;
       height: 52px;
       background-color: #f5f5f5;
       border: none;
       border-radius: 5px;
       padding: 8px 20px;
       transition-duration: .2s; }
+      section#content-contact form input#contact-name-home {
+        width: 100%; }
+      section#content-contact form input#contact-tel-home {
+        float: left;
+        width: 65%; }
+        @media (max-width: 480px) {
+          section#content-contact form input#contact-tel-home {
+            width: 100%;
+            float: initial; } }
       @media (max-width: 465px) {
         section#content-contact form input {
           width: 290px; } }
@@ -13893,17 +13917,29 @@ section#content-contact {
         box-shadow: 0 0 0 1.5px #62e0e9;
         background-color: #ffffff;
         transition-duration: .2s; }
-    section#content-contact form button {
+    section#content-contact form span[role="alert"] {
+      float: left; }
+    section#content-contact form input[type=submit] {
       font-family: "roboto";
       font-size: 18px;
       font-weight: 500;
-      width: 100px;
+      width: 31%;
       height: 52px;
       color: #ffffff;
       background-color: #62e0e9;
       border: none;
       border-radius: 5px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      margin-left: 4%; }
+      section#content-contact form input[type=submit]:hover {
+        background-color: #54c8d1; }
+      section#content-contact form input[type=submit]:focus {
+        outline: none;
+        background-color: #62e0e9; }
+      @media (max-width: 480px) {
+        section#content-contact form input[type=submit] {
+          width: 100%;
+          margin-left: 0; } }
   section#content-contact.show {
     opacity: 0; }
 
@@ -13951,6 +13987,33 @@ section#content-contact {
       @media (max-width: 500px) {
         #footer #footer-content iframe {
           width: 95%; } }
+
+section.post-content {
+  margin: 95px 0; }
+  section.post-content h1 {
+    font-family: "roboto";
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 40px; }
+    @media (max-width: 991px) {
+      section.post-content h1 {
+        text-align: center; } }
+    @media (max-width: 420px) {
+      section.post-content h1 {
+        font-size: 27px; } }
+  section.post-content img {
+    float: left;
+    width: 100%;
+    height: auto; }
+    @media (max-width: 991px) {
+      section.post-content img {
+        margin-bottom: 40px; } }
+  section.post-content p {
+    font-size: 20px;
+    font-weight: 300; }
+    @media (max-width: 991px) {
+      section.post-content p {
+        text-align: justify; } }
 
 section#contact-image ul {
   list-style: none;
@@ -14110,6 +14173,11 @@ section#page-contact {
     border: none;
     border-radius: 5px;
     letter-spacing: 1px; }
+    section#page-contact #contact-form form input[type="submit"]:hover {
+      background-color: #54c8d1; }
+    section#page-contact #contact-form form input[type="submit"]:focus {
+      outline: none;
+      background-color: #62e0e9; }
     @media (max-width: 767px) {
       section#page-contact #contact-form form input[type="submit"] {
         width: 100%; } }

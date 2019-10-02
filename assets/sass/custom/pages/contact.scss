@@ -68,6 +68,15 @@ section{
                     border-radius: 5px;
                     letter-spacing: 1px;
 
+                    &:hover{
+                        background-color: #54c8d1;
+                    }
+    
+                    &:focus{
+                        outline: none;
+                        background-color: #62e0e9;
+                    }
+
                     @media (max-width: 767px) {
                         width: 100%;
                     }

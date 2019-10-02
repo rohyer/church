@@ -2,10 +2,10 @@ section{
 	&#content-contact{
 		float: left;
 		width: 100%;
-		margin: 100px 0;
+		margin: 100px 0 80px;
 		
 		@media (max-width: 767px) {
-			margin: 90px 0;
+			margin: 90px 0 70px;
 		}
 
 		h6{
@@ -23,6 +23,15 @@ section{
 
 		form{
 			text-align: center;
+			margin: 15px auto;
+
+			@media (min-width: 481px) {
+				width: 400px;
+			}
+
+			@media (max-width: 480px) {
+				width: 100%;
+			}
 
 			label{
 				margin-right: 10px;
@@ -37,13 +46,26 @@ section{
 			input{
 				font-family: $ff-main;
 				font-weight: 300;
-				width: 320px;
 				height: 52px;
 				background-color: #f5f5f5;
 				border: none;
 				border-radius: 5px;
 				padding: 8px 20px;
 				transition-duration: .2s;
+
+				&#contact-name-home{
+					width: 100%;
+				}
+
+				&#contact-tel-home{
+					float: left;
+					width: 65%;
+
+					@media (max-width: 480px) {
+						width: 100%;
+						float: initial;
+					}
+				}
 
 				@media (max-width: 465px) {
 					width: 290px;
@@ -58,17 +80,36 @@ section{
 				}
 			}
 
-			button{
+			span[role="alert"]{
+				float: left;
+			}
+
+			input[type=submit]{
 				font-family: $ff-main;
 				font-size: 18px;
 				font-weight: 500;
-				width: 100px;
+				width: 31%;
 				height: 52px;
 				color: #ffffff;
 				background-color: #62e0e9;
 				border: none;
 				border-radius: 5px;
 				letter-spacing: 1px;
+				margin-left: 4%;
+
+				&:hover{
+					background-color: #54c8d1;
+				}
+
+				&:focus{
+					outline: none;
+					background-color: #62e0e9;
+				}
+
+				@media (max-width: 480px) {
+					width: 100%;
+					margin-left: 0;
+				}
 			}
 		}
 
