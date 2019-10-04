@@ -13632,6 +13632,10 @@ section#main-image img {
   width: 100% !important;
   height: 550px !important; }
 
+video.bg-video {
+  width: 100%;
+  height: auto; }
+
 section#content-1 {
   height: auto;
   padding: 95px 0;
