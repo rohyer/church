@@ -13597,12 +13597,12 @@ readers do not read off random characters that represent icons */
       #header #header-content #logo h1 {
         font-size: 32px;
         font-weight: 400;
-        color: #000000;
+        color: #ffffff;
         letter-spacing: 0.5px;
         margin: 15px 0; }
         #header #header-content #logo h1 a {
           text-decoration: none;
-          color: initial; }
+          color: #ffffff; }
     #header #header-content #header-menu {
       float: left; }
       #header #header-content #header-menu .menu-menu-container {
@@ -13618,15 +13618,16 @@ readers do not read off random characters that represent icons */
             #header #header-content #header-menu .menu-menu-container ul {
               margin: 25px 0 25px 0; } }
           #header #header-content #header-menu .menu-menu-container ul li {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 400;
             float: left;
             margin: 0 10px; }
             #header #header-content #header-menu .menu-menu-container ul li a {
-              color: #000000;
-              text-decoration: none; }
+              color: #ffffff;
+              text-decoration: none;
+              text-shadow: 0px 0px 2px #000000; }
               #header #header-content #header-menu .menu-menu-container ul li a:hover {
-                color: #000000; }
+                color: #ffffff; }
 
 section#main-image img {
   width: 100% !important;
