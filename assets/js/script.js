@@ -1,5 +1,3 @@
-document.getElementById('video').play();
-
 $('#banner-full ul').owlCarousel({
 	loop: true,
 	reponsiveClass: true,
