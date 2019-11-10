@@ -4,6 +4,6 @@
 	<span id="contact-message">
 		<h6>Faça parte do corpo de Cristo.</h6>
 		<p>Entre em contato para participar de nossas células.</p>
-		<a href="#">contato</a>
+		<a href="<?php get_permalink() ?>contato">contato</a>
 	</span>
 </section>

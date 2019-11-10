@@ -14086,7 +14086,8 @@ section.post-content {
         margin-bottom: 40px; } }
   section.post-content p {
     font-size: 20px;
-    font-weight: 300; }
+    font-weight: 300;
+    text-align: justify; }
     @media (max-width: 991px) {
       section.post-content p {
         text-align: justify; } }
