@@ -13,11 +13,11 @@
 	<div class="container">
 		<div class="row">
 			<div id="header-content">
-				<div id="logo" class="d-flex justify-content-center justify-content-md-start col-md-3 col-lg-3 col-xl-2">
-					<h1><a href="<?php echo esc_url( home_url('/') ); ?>">Igreja</a></h1>
+				<div id="logo" class="d-flex justify-content-center justify-content-md-start col-md-3 col-lg-3 col-xl-4">
+					<h1><a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/main-img/luterana-semcor.png" alt=""><div id="name-logo"> Comunidade Luterana</div></a></h1>
 				</div>
 
-				<div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
+				<div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-6 offset-xl-2 justify-content-md-end">
 					<ul>
 					<?php
 					

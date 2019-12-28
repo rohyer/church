@@ -12,17 +12,33 @@
 		#logo{
 			float: left;
 			height: 80px;
+			margin-top: 10px;
 
 			h1{
-				font-size: 32px;
+				font-size: 26px;
 				font-weight: 400;
 				color: #000000;
 				letter-spacing: 0.5px;
 
 				a{
-					line-height: 80px;
+					float: left;
+					line-height: 35px;
 					text-decoration: none;
-    				color: #000000;
+					color: #000000;
+					
+					img {
+						float: left;
+						display: inline-block;
+						width: 100px;
+						height: auto;
+					}
+
+					#name-logo {
+						display: inline-block;
+						width: 160px;
+						line-height: 35px;
+						margin-left: 10px;
+					}
 				}
 			}
 		}
@@ -92,7 +108,7 @@
 				height: 80px;
 	
 				h1{
-					font-size: 32px;
+					font-size: 26px;
 					font-weight: 400;
 					color: #ffffff;
 					letter-spacing: 0.5px;
