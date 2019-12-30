@@ -1,0 +1,19 @@
+section {
+    &#secondary-image {
+        position: relative;
+        background-image: url(../img/back-12.jpg);
+        background-size: 100% auto;
+        background-position: 0px -400px;
+        height: 450px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.40);
+        }
+    }
+}

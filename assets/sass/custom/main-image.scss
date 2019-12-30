@@ -1,0 +1,55 @@
+section {
+    &#main-image {
+        position: relative;
+        width: 100%;
+        height: 730px;
+        background-image: url(../img/main-img/back-10.jpg);
+        background-size: 100% auto;
+        background-position: bottom;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+            top: 0;
+            left: 0;
+        }
+
+        i {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            font-size: 40px;
+            color:  #FFFFFF;
+
+            &#arrow-down {
+                -webkit-animation: animation-cycle 1.0s infinite;
+                animation: animation-cycle 1.0s infinite;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+            }
+
+            @-webkit-keyframes animation-cycle {
+                from {
+                    bottom: 80px;
+                }
+
+                to {
+                    bottom: 90px;
+                }
+            }
+
+            @keyframes animation-cycle {
+                from {
+                    bottom: 80px;
+                }
+                
+                to {
+                    bottom: 90px;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
-    <?php get_template_part('elements/parts/part', 'main-image'); ?>
+    <div class="back-image-page">
+        <?php get_template_part('elements/parts/part', 'secondary-image'); ?>
+        <h3>Programas & Eventos</h3>
+    </div>
 
     <section id="main-schedules">
         <div id="title-schedules" class="d-flex align-items-center">

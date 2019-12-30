@@ -7,7 +7,6 @@
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Programas & Eventos</a></li>
 						<li><a href="#">Mensagens</a></li>
-						<li><a href="#">Sobre nós</a></li>
 						<li><a href="#">Contato</a></li>
 					</ul>
 
