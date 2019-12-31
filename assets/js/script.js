@@ -111,19 +111,26 @@ $(window).on("load scroll", function(){
 // document.getElementById("first-three-schedules").remove();
 
 
-// Scroll
-const arrowDown = window.document.getElementById('arrow-down')
-arrowDown.addEventListener('click', goDown)
+// Scroll Click Down
+const arrowDownGlobal = window.document.getElementById('arrow-down')
+arrowDownGlobal.addEventListener('click', goDown)
 function goDown() {
 	let mainImage = window.document.getElementById('content-1').offsetTop
 	scrollToPosition(mainImage)
 
 }
 
+// Scroll Click Top
+const arrowTopGlobal = window.document.getElementById('arrow-top')
+arrowTopGlobal.addEventListener('click', goTop)
+function goTop() {
+	let windowTop = window.document.getElementById('main-image').offsetTop
+	scrollToPosition(windowTop)
+}
+
 function scrollToPosition(toPosition) {
 	smoothScrollTo(toPosition, 1000)
 }
-
 
 function smoothScrollTo(endY, duration) {
 	const startY = window.scrollY || window.pageYOffset
@@ -147,6 +154,7 @@ function smoothScrollTo(endY, duration) {
 	}, 1000 / 60)
 }
 
+
 window.addEventListener('scroll', function(e) {
 	let y = window.pageYOffset
 	let mainImage = window.document.getElementById('main-image').offsetHeight
@@ -158,6 +166,20 @@ window.addEventListener('scroll', function(e) {
 	} else {
 		let arrowDown = window.document.getElementById('arrow-down')
 		arrowDown.style.opacity = 100
+	}
+})
+
+window.addEventListener('scroll', function(e) {
+	let y = window.pageYOffset
+	let mainImage = window.document.getElementById('main-image').offsetHeight
+
+	if (y > mainImage - 10) {
+		let arrowTop = window.document.getElementById('arrow-top')
+		arrowTop.style.opacity = 100
+		arrowTop.style.transitionDuration = '.5s'
+	} else {
+		let arrowTop = window.document.getElementById('arrow-top')
+		arrowTop.style.opacity = 0
 	}
 })
 

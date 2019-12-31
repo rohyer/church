@@ -3,7 +3,6 @@
 	width: 100%;
 	z-index: 99;
 	height: 85px;
-	font-family: 'roboto';
 
 	#header-content{
 		width: 100%;
@@ -32,11 +31,10 @@
 					}
 
 					#name-logo {
-						font-family: 'Hind-vadodara';
+						font-family: 'Montserrat';
 						font-size: 24px;
 						font-weight: 400;
 						font-style: normal;
-						letter-spacing: 0.5px;
 						display: inline-block;
 						width: 160px;
 						line-height: 30px;
@@ -123,11 +121,10 @@
 					}
 
 					#name-logo {
-						font-family: 'Hind-vadodara';
+						font-family: 'Montserrat';
 						font-size: 24px;
 						font-weight: 400;
 						font-style: normal;
-						letter-spacing: 0.5px;
 						display: inline-block;
 						width: 160px;
 						line-height: 30px;
@@ -168,11 +165,11 @@
 								margin: 0 10px;
 			
 								a{
-									color: #ffffff;
+									color: #FFFFFF;
 									text-decoration: none;
 			
 									&:hover{
-										color: #ffffff;
+										color: #EFEFEF;
 									}
 								}
 							}

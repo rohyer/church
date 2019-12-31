@@ -6,7 +6,7 @@
     </div>
 
     <section id="page-contact" class="d-flex align-items-center">
-        <div class="container">
+        <div class="container-custom">
             <div class="row">
                 <div id="contact-form" class="col-12 col-md-6">
                     <h6>Formulário de Contato</h6>
