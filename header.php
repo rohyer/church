@@ -10,7 +10,7 @@
 <?php wp_body_open(); ?>
 
 <header id="header">
-	<div class="container">
+	<div class="container-custom">
 		<div class="row">
 			<div id="header-content">
 				<div id="logo" class="d-flex justify-content-center justify-content-md-start col-md-3 col-lg-3 col-xl-4">

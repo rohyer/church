@@ -13638,11 +13638,30 @@ readers do not read off random characters that represent icons */
     .container-custom {
       max-width: 1300px; } }
 
+.container-custom {
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container-custom {
+      max-width: 680px; } }
+  @media (min-width: 768px) {
+    .container-custom {
+      max-width: 900px; } }
+  @media (min-width: 992px) {
+    .container-custom {
+      max-width: 1080px; } }
+  @media (min-width: 1200px) {
+    .container-custom {
+      max-width: 1420px; } }
+
 #header {
+  position: absolute;
   width: 100%;
   z-index: 99;
   height: 85px;
-  box-shadow: 0px 2px 5px #cdcdcd;
   font-family: 'roboto'; }
   #header #header-content {
     width: 100%;
@@ -13652,13 +13671,13 @@ readers do not read off random characters that represent icons */
       height: 80px;
       margin-top: 6px; }
       #header #header-content #logo h1 {
-        color: #000000;
+        color: #FFFFFF;
         margin-bottom: 0; }
         #header #header-content #logo h1 a {
           float: left;
           line-height: 35px;
           text-decoration: none;
-          color: #000000; }
+          color: #FFFFFF; }
           #header #header-content #logo h1 a img {
             float: left;
             display: inline-block;
@@ -13700,10 +13719,10 @@ readers do not read off random characters that represent icons */
               float: left;
               margin: 0 10px; }
               #header #header-content #header-menu ul .menu-menu-container ul li a {
-                color: #000000;
+                color: #FFFFFF;
                 text-decoration: none; }
                 #header #header-content #header-menu ul .menu-menu-container ul li a:hover {
-                  color: #000000; }
+                  color: #D5D5D5; }
 
 .home #header {
   position: absolute;
@@ -13782,6 +13801,7 @@ section#main-image {
     top: 0;
     left: 0; }
   section#main-image i {
+    cursor: pointer;
     position: absolute;
     bottom: 80px;
     left: 50%;
@@ -14164,7 +14184,7 @@ section#content-contact {
           #footer #footer-content ul li a:hover {
             text-decoration: none; }
     #footer #footer-content iframe {
-      margin-left: 170px;
+      float: right;
       padding: 0 15px; }
       @media (max-width: 1200px) and (min-width: 992px) {
         #footer #footer-content iframe {
@@ -14322,7 +14342,7 @@ section#contact-image ul {
     color: #FFF;
     position: absolute;
     bottom: 20px;
-    left: 205px; }
+    left: 85px; }
 
 section#page-contact {
   float: left;

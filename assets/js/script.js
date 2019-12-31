@@ -108,7 +108,62 @@ $(window).on("load scroll", function(){
     });
 });
 
-document.getElementById("first-three-schedules").remove();
+// document.getElementById("first-three-schedules").remove();
+
+
+// Scroll
+const arrowDown = window.document.getElementById('arrow-down')
+arrowDown.addEventListener('click', goDown)
+function goDown() {
+	let mainImage = window.document.getElementById('content-1').offsetTop
+	scrollToPosition(mainImage)
+
+}
+
+function scrollToPosition(toPosition) {
+	smoothScrollTo(toPosition, 1000)
+}
+
+
+function smoothScrollTo(endY, duration) {
+	const startY = window.scrollY || window.pageYOffset
+	const distanceY = endY - startY
+	const startTime = new Date().getTime()
+
+	duration = typeof duration !== 'undefined' ? duration : 400
+
+	const easeInOutQuart = (time, from, distance, duration) => {
+		if ((time /= duration /2 ) < 1) return distance / 2 * time * time * time * time * time + from
+		return -distance /2 * ((time -= 2) * time * time * time - 2) + from
+	}
+
+	const timer = setInterval(() => {
+		const time = new Date().getTime() - startTime
+		const newY = easeInOutQuart(time, startY, distanceY, duration)
+		if (time >= duration) {
+			clearInterval(timer)
+		}
+		window.scroll(0, newY)
+	}, 1000 / 60)
+}
+
+window.addEventListener('scroll', function(e) {
+	let y = window.pageYOffset
+	let mainImage = window.document.getElementById('main-image').offsetHeight
+
+	if (y > mainImage - 400) {
+		let arrowDown = window.document.getElementById('arrow-down')
+		arrowDown.style.opacity = 0
+		arrowDown.style.transitionDuration = '.5s'
+	} else {
+		let arrowDown = window.document.getElementById('arrow-down')
+		arrowDown.style.opacity = 100
+	}
+})
+
+
+
+
 
 // var a = document.getElementsByClassName("abcde")
 // a.classList.remove("abcde");
