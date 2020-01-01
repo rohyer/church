@@ -2,8 +2,8 @@ section {
     &#secondary-image {
         position: relative;
         background-image: url(../img/back-12.jpg);
-        background-size: 100% auto;
-        background-position: 0px -400px;
+        background-size: cover;
+        background-position: bottom;
         height: 450px;
 
         &:before {
