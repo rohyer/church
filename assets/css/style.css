@@ -13768,8 +13768,8 @@ section#main-image {
     font-size: 40px; }
     section#main-image i#arrow-top {
       position: fixed;
-      left: 96%;
-      bottom: 3%;
+      right: 1%;
+      bottom: 2%;
       background-color: #62e0e9;
       color: #FFFFFF;
       padding: 2px 10px;
@@ -13875,10 +13875,17 @@ section#content-2 {
     font-size: 36px;
     font-weight: 300;
     margin-bottom: 45px; }
+    @media (min-width: 1100px) {
+      section#content-2 #first-content-2 h4 {
+        text-align: left; } }
     @media (max-width: 1099px) and (min-width: 992px) {
       section#content-2 #first-content-2 h4 {
+        text-align: left;
         font-size: 28px;
         margin-bottom: 30px; } }
+    @media (max-width: 991px) {
+      section#content-2 #first-content-2 h4 {
+        text-align: center; } }
     @media (max-width: 768px) {
       section#content-2 #first-content-2 h4 {
         font-size: 32px; } }
@@ -13949,6 +13956,12 @@ section#content-3 {
       font-size: 36px;
       font-weight: 300;
       margin-bottom: 45px; }
+      @media (min-width: 992px) {
+        section#content-3 #second-content-3 h4 {
+          text-align: left; } }
+      @media (max-width: 991px) {
+        section#content-3 #second-content-3 h4 {
+          text-align: center; } }
       @media (max-width: 768px) {
         section#content-3 #second-content-3 h4 {
           font-size: 32px; } }
@@ -13975,6 +13988,15 @@ section#content-4 {
     float: left;
     width: 100%;
     height: 440px; }
+    @media (max-width: 991px) and (min-width: 768px) {
+      section#content-4 span#img-eventos {
+        height: 400px; } }
+    @media (max-width: 767px) and (min-width: 577) {
+      section#content-4 span#img-eventos {
+        height: 380px; } }
+    @media (max-width: 576px) {
+      section#content-4 span#img-eventos {
+        height: 330px; } }
     section#content-4 span#img-eventos#img-eventos {
       background-image: url("../img/eventos/evento-77.jpg");
       background-position: center;
@@ -13997,25 +14019,33 @@ section#content-4 {
     width: 80%;
     text-align: center;
     color: #ffffff; }
-    @media (max-width: 710px) and (min-width: 591px) {
+    @media (max-width: 991px) and (min-width: 768px) {
       section#content-4 span#contact-message {
-        top: 130px; } }
-    @media (max-width: 590px) {
+        top: 120px; } }
+    @media (max-width: 767px) and (min-width: 577px) {
       section#content-4 span#contact-message {
-        top: 105px; } }
+        top: 110px; } }
+    @media (max-width: 576px) {
+      section#content-4 span#contact-message {
+        top: 70px; } }
     section#content-4 span#contact-message h6 {
       font-family: "roboto";
       font-size: 50px;
       font-weight: 300;
       margin-bottom: 30px; }
-      @media (max-width: 830px) and (min-width: 711px) {
+      @media (max-width: 991px) and (min-width: 768px) {
         section#content-4 span#contact-message h6 {
           font-size: 42px;
           font-weight: 400; } }
-      @media (max-width: 710px) {
+      @media (max-width: 767px) and (min-width: 577px) {
         section#content-4 span#contact-message h6 {
-          font-size: 35px;
-          font-weight: 400; } }
+          font-size: 40px;
+          font-weight: 300; } }
+      @media (max-width: 576px) {
+        section#content-4 span#contact-message h6 {
+          font-size: 25px;
+          font-weight: 400;
+          margin-bottom: 20px; } }
     section#content-4 span#contact-message p {
       font-family: "roboto";
       font-size: 22px;
@@ -14141,10 +14171,10 @@ section#content-contact {
       margin: 0; }
       @media (max-width: 991px) {
         #footer #footer-content ul {
-          width: 100%;
-          margin-right: 100px; }
-          #footer #footer-content ul:nth-child(2) {
-            margin-top: 30px; } }
+          width: 100%; } }
+      @media (max-width: 767px) {
+        #footer #footer-content ul:nth-child(2) {
+          margin-top: 20px; } }
       #footer #footer-content ul h6 {
         font-family: "Nunito";
         font-size: 24px;
@@ -14163,8 +14193,10 @@ section#content-contact {
           margin-left: 70px; } }
       @media (max-width: 991px) {
         #footer #footer-content iframe {
-          margin-left: 0;
-          margin-top: 30px; } }
+          margin-left: 0; } }
+      @media (max-width: 767px) {
+        #footer #footer-content iframe {
+          margin-top: 20px; } }
       @media (max-width: 500px) {
         #footer #footer-content iframe {
           width: 95%; } }

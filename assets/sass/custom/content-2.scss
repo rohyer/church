@@ -33,9 +33,18 @@ section{
 				font-weight: 300;
 				margin-bottom: 45px;
 
+				@media (min-width: 1100px) {
+					text-align: left;
+				}
+
 				@media (max-width: 1099px) and (min-width: 992px) {
+					text-align: left;
 					font-size: 28px;
 					margin-bottom: 30px;
+				}
+
+				@media (max-width: 991px) {
+					text-align: center;
 				}
 
 				@media (max-width: 768px) {
