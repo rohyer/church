@@ -1,5 +1,10 @@
 <?php
 
+function my_function_admin_bar(){
+    return false;
+}
+add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+
 add_theme_support( 'post-thumbnails' );
 
 function g_scripts() {
@@ -14,6 +19,7 @@ function g_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'g_scripts');
+
 
 require get_template_directory() . '/inc/customizer.php';
 

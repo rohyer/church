@@ -60,7 +60,7 @@ section{
 					}
 
 					@media (max-width: 576px) {
-						top: 70px;
+						top: 75px;
 					}
 	
 				h6{
@@ -79,8 +79,14 @@ section{
 						font-weight: 300;
 					}
 
-					@media (max-width: 576px) {
+					@media (max-width: 576px) and (min-width: 431px) {
 						font-size: 25px;
+						font-weight: 400;
+						margin-bottom: 20px;
+					}
+
+					@media (max-width: 430px) {
+						font-size: 22px;
 						font-weight: 400;
 						margin-bottom: 20px;
 					}
@@ -89,10 +95,18 @@ section{
 				p{
 					font-family: $ff-main;
 					font-size: 22px;
+					font-weight: 400;
 					margin-bottom: 35px;
 	
-					@media (max-width: 710px) {
+					@media (max-width: 767px) {
 						font-size: 20px;
+					}
+					@media (max-width: 576px) {
+						font-weight: 300;
+					}
+					@media (max-width: 430px) {
+						font-size: 18px;
+						font-weight: 300;
 					}
 				}
 	

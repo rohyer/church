@@ -9,7 +9,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header id="header">
+<header id="header" class="d-none d-lg-block">
 	<div class="container-custom">
 		<div class="row">
 			<div id="header-content">
@@ -37,3 +37,36 @@
 		</div>
 	</div>
 </header>
+
+<header id="header-responsive" class="d-block d-lg-none">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="header-content-responsive">
+				<div id="logo-responsive" class="d-flex justify-content-start align-items-center col-sm-10 col-9">
+					<h1><a href="<?php echo esc_url( home_url('/') ); ?>" class="d-flex align-items-center">
+					
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/main-img/logo-main.png" alt="">
+					<div id="name-logo-responsive"> C. Luterana</div></a></h1> 
+				</div>
+				
+				<div id="main-icon" class="d-flex justify-content-end align-items-center col-sm-2 col-3">
+					<div id="btn-icon" class="menu-closed">
+						<span class="btn-icon-lines"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- <div class="bg"></div>
+
+<nav class="menu" id="principal">
+	<ul>
+		<li><a href="#">Voltar</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Programas & Eventos</a></li>
+		<li><a href="#">Mensagens</a></li>
+		<li><a href="#">Contato</a></li>
+	</ul>
+</nav> -->

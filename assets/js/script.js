@@ -183,6 +183,14 @@ window.addEventListener('scroll', function(e) {
 	}
 })
 
+// ======================= MENU RESPONSIVE
+const menuClosed = window.document.getElementById('menuClosed')
+btnIcon.addEventListener('click', openMenu)
+function openMenu() {
+	btnIcon.classList.remove('menu-closed')
+	btnIcon.classList.add('menu-opened')
+}
+
 
 
 

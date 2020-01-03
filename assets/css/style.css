@@ -13672,9 +13672,6 @@ readers do not read off random characters that represent icons */
   width: 100%;
   z-index: 99;
   height: 85px; }
-  @media (max-width: 991px) {
-    #header {
-      height: 75px; } }
   #header #header-content {
     width: 100%;
     height: 80px; }
@@ -13682,9 +13679,6 @@ readers do not read off random characters that represent icons */
       float: left;
       height: 80px;
       margin-top: 6px; }
-      @media (max-width: 991px) {
-        #header #header-content #logo {
-          height: 75px; } }
       #header #header-content #logo h1 {
         color: #FFFFFF;
         margin-bottom: 0; }
@@ -13747,6 +13741,72 @@ readers do not read off random characters that represent icons */
                 #header #header-content #header-menu ul .menu-menu-container ul li a:hover {
                   color: #D5D5D5; }
 
+#header-responsive {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  height: 60px;
+  background-color: #2C3742; }
+  #header-responsive #header-content-responsive {
+    width: 100%;
+    height: 60px; }
+    #header-responsive #header-content-responsive #logo-responsive {
+      float: left;
+      height: 60px; }
+      #header-responsive #header-content-responsive #logo-responsive h1 {
+        color: #FFFFFF;
+        margin-bottom: 0; }
+        #header-responsive #header-content-responsive #logo-responsive h1 a {
+          float: left;
+          line-height: 23px;
+          text-decoration: none;
+          color: #FFFFFF; }
+          #header-responsive #header-content-responsive #logo-responsive h1 a img {
+            float: left;
+            display: inline-block;
+            width: 30px;
+            height: auto; }
+            @media (max-width: 576px) {
+              #header-responsive #header-content-responsive #logo-responsive h1 a img {
+                width: 25px; } }
+          #header-responsive #header-content-responsive #logo-responsive h1 a #name-logo-responsive {
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            display: inline-block;
+            margin-left: 10px;
+            align-items: center;
+            text-transform: uppercase; }
+    #header-responsive #header-content-responsive #main-icon {
+      height: 60px; }
+      #header-responsive #header-content-responsive #main-icon #btn-icon {
+        float: left;
+        width: 30px;
+        height: 20px; }
+        #header-responsive #header-content-responsive #main-icon #btn-icon span.btn-icon-lines {
+          float: left;
+          position: relative;
+          width: 30px;
+          height: 2px;
+          background-color: #FFFFFF; }
+          #header-responsive #header-content-responsive #main-icon #btn-icon span.btn-icon-lines:before {
+            position: absolute;
+            content: '';
+            top: 8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #FFFFFF; }
+          #header-responsive #header-content-responsive #main-icon #btn-icon span.btn-icon-lines:after {
+            position: absolute;
+            content: '';
+            top: 16px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #FFFFFF; }
+
 section#main-image {
   position: relative;
   width: 100%;
@@ -13754,6 +13814,15 @@ section#main-image {
   background-image: url(../img/main-img/back-10.jpg);
   background-size: cover;
   background-position: bottom; }
+  @media (max-width: 991px) and (min-width: 769px) {
+    section#main-image {
+      height: 600px; } }
+  @media (max-width: 768px) and (min-width: 577) {
+    section#main-image {
+      height: 560px; } }
+  @media (max-width: 576px) {
+    section#main-image {
+      height: 530px; } }
   section#main-image:before {
     content: '';
     position: absolute;
@@ -13844,6 +13913,7 @@ section#content-1 {
     color: #7e7e7e; }
     @media (max-width: 768px) {
       section#content-1 p {
+        text-align: justify;
         font-size: 18px;
         width: auto; } }
   section#content-1.show {
@@ -13902,6 +13972,9 @@ section#content-2 {
     @media (max-width: 991px) {
       section#content-2 #first-content-2 p {
         text-align: center; } }
+    @media (max-width: 768px) {
+      section#content-2 #first-content-2 p {
+        text-align: justify; } }
   section#content-2 #second-content-2 {
     position: absolute;
     width: auto;
@@ -13974,8 +14047,8 @@ section#content-3 {
       color: #7e7e7e; }
       @media (max-width: 768px) {
         section#content-3 #second-content-3 p {
-          font-size: 18px;
-          text-align: center; } }
+          text-align: justify;
+          font-size: 18px; } }
   section#content-3.show {
     opacity: 0; }
 
@@ -14027,7 +14100,7 @@ section#content-4 {
         top: 110px; } }
     @media (max-width: 576px) {
       section#content-4 span#contact-message {
-        top: 70px; } }
+        top: 75px; } }
     section#content-4 span#contact-message h6 {
       font-family: "roboto";
       font-size: 50px;
@@ -14041,18 +14114,31 @@ section#content-4 {
         section#content-4 span#contact-message h6 {
           font-size: 40px;
           font-weight: 300; } }
-      @media (max-width: 576px) {
+      @media (max-width: 576px) and (min-width: 431px) {
         section#content-4 span#contact-message h6 {
           font-size: 25px;
+          font-weight: 400;
+          margin-bottom: 20px; } }
+      @media (max-width: 430px) {
+        section#content-4 span#contact-message h6 {
+          font-size: 22px;
           font-weight: 400;
           margin-bottom: 20px; } }
     section#content-4 span#contact-message p {
       font-family: "roboto";
       font-size: 22px;
+      font-weight: 400;
       margin-bottom: 35px; }
-      @media (max-width: 710px) {
+      @media (max-width: 767px) {
         section#content-4 span#contact-message p {
           font-size: 20px; } }
+      @media (max-width: 576px) {
+        section#content-4 span#contact-message p {
+          font-weight: 300; } }
+      @media (max-width: 430px) {
+        section#content-4 span#contact-message p {
+          font-size: 18px;
+          font-weight: 300; } }
     section#content-4 span#contact-message a {
       font-family: "roboto";
       font-size: 22px;
@@ -14197,9 +14283,6 @@ section#content-contact {
       @media (max-width: 767px) {
         #footer #footer-content iframe {
           margin-top: 20px; } }
-      @media (max-width: 500px) {
-        #footer #footer-content iframe {
-          width: 95%; } }
 
 section.post-content {
   margin: 95px 0; }

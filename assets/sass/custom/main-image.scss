@@ -7,6 +7,16 @@ section {
         background-size: cover;
         background-position: bottom;
 
+        @media (max-width: 991px) and (min-width: 769px) {
+            height: 600px;
+        }
+        @media (max-width: 768px) and (min-width: 577) {
+            height: 560px;
+        }
+        @media (max-width: 576px) {
+            height: 530px;
+        }
+
         &:before {
             content: '';
             position: absolute;
