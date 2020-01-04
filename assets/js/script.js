@@ -184,13 +184,25 @@ window.addEventListener('scroll', function(e) {
 })
 
 // ======================= MENU RESPONSIVE
-const menuClosed = window.document.getElementById('menuClosed')
+const btnIcon = window.document.getElementById('btn-icon')
 btnIcon.addEventListener('click', openMenu)
 function openMenu() {
-	btnIcon.classList.remove('menu-closed')
-	btnIcon.classList.add('menu-opened')
-}
+	let mainMenuResponsive = window.document.getElementById('main-menu-responsive')
+	let body = window.document.getElementsByTagName('body')[0]
 
+	if (btnIcon.className == 'menu-closed') {
+		btnIcon.classList.add('menu-opened')
+		btnIcon.classList.remove('menu-closed')
+		mainMenuResponsive.classList.add('open-menu-responsive')
+		body.style.overflow = 'hidden'
+	} else if (btnIcon.className == 'menu-opened') {
+		btnIcon.classList.remove('menu-opened')
+		btnIcon.classList.add('menu-closed')
+		mainMenuResponsive.classList.remove('open-menu-responsive')
+		body.style.overflow = 'initial'
+	}
+	
+}
 
 
 

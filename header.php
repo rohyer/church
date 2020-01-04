@@ -59,14 +59,15 @@
 	</div>
 </header>
 
-<!-- <div class="bg"></div>
 
-<nav class="menu" id="principal">
-	<ul>
-		<li><a href="#">Voltar</a></li>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Programas & Eventos</a></li>
-		<li><a href="#">Mensagens</a></li>
-		<li><a href="#">Contato</a></li>
-	</ul>
-</nav> -->
+<nav id="main-menu-responsive" class="d-block d-lg-none">
+	<div class="container-custom">
+		<ul>
+			<h6>Menu</h6>
+			<li><a href="./index.php">Home</a></li>
+			<li><a href="./programas">Programas & Eventos</a></li>
+			<li><a href="./mensagens">Mensagens</a></li>
+			<li><a href="./contato">Contato</a></li>
+		</ul>
+	</div>
+</nav>

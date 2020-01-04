@@ -13667,6 +13667,67 @@ readers do not read off random characters that represent icons */
     .container-custom {
       max-width: 1400px; } }
 
+.menu-opened span.btn-icon-lines {
+  float: left;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: all .3s linear;
+  background-color: transparent; }
+  .menu-opened span.btn-icon-lines:before {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transform: translate(0px, 8px) rotate(45deg);
+    transition: all .3s linear; }
+  .menu-opened span.btn-icon-lines:after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transform: translate(0px, -8px) rotate(-45deg);
+    transition: all .3s linear; }
+
+nav#main-menu-responsive {
+  position: fixed;
+  bottom: 91%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding: 45px 15px;
+  z-index: 999;
+  transition: all .3s ease-out; }
+  nav#main-menu-responsive h6 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px; }
+  nav#main-menu-responsive ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    nav#main-menu-responsive ul li {
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      margin-bottom: 10px; }
+      nav#main-menu-responsive ul li a {
+        color: inherit;
+        text-decoration: none; }
+  nav#main-menu-responsive.open-menu-responsive {
+    bottom: -60px; }
+
 #header {
   position: absolute;
   width: 100%;
@@ -13742,11 +13803,12 @@ readers do not read off random characters that represent icons */
                   color: #D5D5D5; }
 
 #header-responsive {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 99;
   height: 60px;
-  background-color: #2C3742; }
+  background-color: #2C3742;
+  z-index: 9999; }
   #header-responsive #header-content-responsive {
     width: 100%;
     height: 60px; }
@@ -13781,31 +13843,37 @@ readers do not read off random characters that represent icons */
     #header-responsive #header-content-responsive #main-icon {
       height: 60px; }
       #header-responsive #header-content-responsive #main-icon #btn-icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
         float: left;
         width: 30px;
         height: 20px; }
-        #header-responsive #header-content-responsive #main-icon #btn-icon span.btn-icon-lines {
+        #header-responsive #header-content-responsive #main-icon #btn-icon.menu-closed span.btn-icon-lines {
           float: left;
           position: relative;
           width: 30px;
           height: 2px;
-          background-color: #FFFFFF; }
-          #header-responsive #header-content-responsive #main-icon #btn-icon span.btn-icon-lines:before {
+          background-color: #FFFFFF;
+          transition: all .3s linear; }
+          #header-responsive #header-content-responsive #main-icon #btn-icon.menu-closed span.btn-icon-lines:before {
             position: absolute;
             content: '';
-            top: 8px;
+            top: -8px;
             left: 0;
             width: 30px;
             height: 2px;
-            background-color: #FFFFFF; }
-          #header-responsive #header-content-responsive #main-icon #btn-icon span.btn-icon-lines:after {
+            background-color: #FFFFFF;
+            transition: all .3s linear; }
+          #header-responsive #header-content-responsive #main-icon #btn-icon.menu-closed span.btn-icon-lines:after {
             position: absolute;
             content: '';
-            top: 16px;
+            bottom: -8px;
             left: 0;
             width: 30px;
             height: 2px;
-            background-color: #FFFFFF; }
+            background-color: #FFFFFF;
+            transition: all .3s linear; }
 
 section#main-image {
   position: relative;
