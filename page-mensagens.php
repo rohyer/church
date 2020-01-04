@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div id="messages">
+        <div id="messages" class="owl-carousel">
             <div class="container-custom">
                 <div class="row">
                     <div class="col-12">

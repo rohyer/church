@@ -95,6 +95,17 @@ $('#messages ul').owlCarousel({
 	}
 });
 
+function sizeOfWindow() {
+	let mainImage = window.document.getElementById('main-image')
+	let windowHeight = window.innerHeight
+	console.log(windowHeight)
+	let windowHeightPX = windowHeight + 'px'
+
+	mainImage.style.height = windowHeightPX
+}
+
+sizeOfWindow()
+
 $(window).on("load scroll", function(){
     $(".show").each(function(){
         var el = $(this);

@@ -20,7 +20,7 @@
             <div class="container-custom">
                 <div class="row">
                     <div class="col-12">
-                        <ul class="owl-carousel owl-theme">
+                        <ul class="owl-theme owl-carousel aul">
                             <li id="first-three-schedules" class="abcde li-one-schedule">
                                 <ul>
                                     <li id="cult" class="li-one-schedule">
@@ -66,7 +66,6 @@
                                     </li>
                                 </ul>
                             </li>
-
                             <li id="second-three-schedules" class="li-one-schedule">
                                 <ul>
                                     <li id="project" class="li-one-schedule">

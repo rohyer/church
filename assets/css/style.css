@@ -13878,19 +13878,9 @@ nav#main-menu-responsive {
 section#main-image {
   position: relative;
   width: 100%;
-  height: 730px;
   background-image: url(../img/main-img/back-10.jpg);
   background-size: cover;
   background-position: bottom; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    section#main-image {
-      height: 600px; } }
-  @media (max-width: 768px) and (min-width: 577) {
-    section#main-image {
-      height: 560px; } }
-  @media (max-width: 576px) {
-    section#main-image {
-      height: 530px; } }
   section#main-image:before {
     content: '';
     position: absolute;
@@ -14019,7 +14009,7 @@ section#content-2 {
     @media (max-width: 1099px) and (min-width: 992px) {
       section#content-2 #first-content-2 h4 {
         text-align: left;
-        font-size: 28px;
+        font-size: 36px;
         margin-bottom: 30px; } }
     @media (max-width: 991px) {
       section#content-2 #first-content-2 h4 {
