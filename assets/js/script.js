@@ -1,6 +1,6 @@
 $('#banner-full ul').owlCarousel({
 	loop: true,
-	reponsiveClass: true,
+	responsiveClass: true,
 	responsive:{
 		0:{
 			items: 1,
@@ -19,7 +19,7 @@ $('#banner-full ul').owlCarousel({
 
 $('#events ul').owlCarousel({
 	loop: false,
-	reponsiveClass: true,
+	responsiveClass: true,
 	responsive:{
 		0:{
 			items: 1,
@@ -42,7 +42,7 @@ $('#schedules-responsive ul').owlCarousel({
 	autoplay: true,
     autoplayTimeout: 1000,
     autoplayHoverPause: true,
-	reponsiveClass: true,
+	responsiveClass: true,
 	responsive:{
 		0:{
 			items: 1,
@@ -52,9 +52,10 @@ $('#schedules-responsive ul').owlCarousel({
 });
 
 
-$('#schedules ul').owlCarousel({
+$('#schedules .aul').owlCarousel({
+	items: 1,
 	loop: false,
-	reponsiveClass: true,
+	responsiveClass: true,
 	responsive:{
 		0:{
 			items: 1,
@@ -77,7 +78,7 @@ $('#messages ul').owlCarousel({
 	autoplay: true,
     autoplayTimeout: 1000,
     autoplayHoverPause: true,
-	reponsiveClass: true,
+	responsiveClass: true,
 	responsive:{
 		0:{
 			items: 1,
@@ -110,22 +111,28 @@ $(window).on("load scroll", function(){
 
 // document.getElementById("first-three-schedules").remove();
 
+const home = window.document.getElementsByTagName('body')[0].className
+let homeArray = home.split(' ')
 
 // Scroll Click Down
-const arrowDownGlobal = window.document.getElementById('arrow-down')
-arrowDownGlobal.addEventListener('click', goDown)
-function goDown() {
-	let mainImage = window.document.getElementById('content-1').offsetTop
-	scrollToPosition(mainImage)
-
+if (homeArray[0] == 'home') {
+	const arrowDownGlobal = window.document.getElementById('arrow-down')
+	arrowDownGlobal.addEventListener('click', goDown)
+	function goDown() {
+		let mainImage = window.document.getElementById('content-1').offsetTop
+		scrollToPosition(mainImage)
+	}
 }
 
+
 // Scroll Click Top
-const arrowTopGlobal = window.document.getElementById('arrow-top')
-arrowTopGlobal.addEventListener('click', goTop)
-function goTop() {
-	let windowTop = window.document.getElementById('main-image').offsetTop
-	scrollToPosition(windowTop)
+if (homeArray[0] == 'home') {
+	const arrowTopGlobal = window.document.getElementById('arrow-top')
+	arrowTopGlobal.addEventListener('click', goTop)
+	function goTop() {
+		let windowTop = window.document.getElementById('main-image').offsetTop
+		scrollToPosition(windowTop)
+	}
 }
 
 function scrollToPosition(toPosition) {
@@ -154,34 +161,37 @@ function smoothScrollTo(endY, duration) {
 	}, 1000 / 60)
 }
 
+if (homeArray[0] == 'home') {
+	window.addEventListener('scroll', function(e) {
+		let y = window.pageYOffset
+		let mainImage = window.document.getElementById('main-image').offsetHeight
 
-window.addEventListener('scroll', function(e) {
-	let y = window.pageYOffset
-	let mainImage = window.document.getElementById('main-image').offsetHeight
+		if (y > mainImage - 400) {
+			let arrowDown = window.document.getElementById('arrow-down')
+			arrowDown.style.opacity = 0
+			arrowDown.style.transitionDuration = '.5s'
+		} else {
+			let arrowDown = window.document.getElementById('arrow-down')
+			arrowDown.style.opacity = 100
+		}
+	})
+}
 
-	if (y > mainImage - 400) {
-		let arrowDown = window.document.getElementById('arrow-down')
-		arrowDown.style.opacity = 0
-		arrowDown.style.transitionDuration = '.5s'
-	} else {
-		let arrowDown = window.document.getElementById('arrow-down')
-		arrowDown.style.opacity = 100
-	}
-})
+if (homeArray[0] == 'home') {
+	window.addEventListener('scroll', function(e) {
+		let y = window.pageYOffset
+		let mainImage = window.document.getElementById('main-image').offsetHeight
 
-window.addEventListener('scroll', function(e) {
-	let y = window.pageYOffset
-	let mainImage = window.document.getElementById('main-image').offsetHeight
-
-	if (y > mainImage - 10) {
-		let arrowTop = window.document.getElementById('arrow-top')
-		arrowTop.style.opacity = 100
-		arrowTop.style.transitionDuration = '.5s'
-	} else {
-		let arrowTop = window.document.getElementById('arrow-top')
-		arrowTop.style.opacity = 0
-	}
-})
+		if (y > mainImage - 10) {
+			let arrowTop = window.document.getElementById('arrow-top')
+			arrowTop.style.opacity = 100
+			arrowTop.style.transitionDuration = '.5s'
+		} else {
+			let arrowTop = window.document.getElementById('arrow-top')
+			arrowTop.style.opacity = 0
+		}
+	})
+}
 
 // ======================= MENU RESPONSIVE
 const btnIcon = window.document.getElementById('btn-icon')
