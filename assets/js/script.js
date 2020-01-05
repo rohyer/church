@@ -95,6 +95,9 @@ $('#messages ul').owlCarousel({
 	}
 });
 
+const home = window.document.getElementsByTagName('body')[0].className
+let homeArray = home.split(' ')
+
 function sizeOfWindow() {
 	let mainImage = window.document.getElementById('main-image')
 	let windowHeight = window.innerHeight
@@ -104,7 +107,9 @@ function sizeOfWindow() {
 	mainImage.style.height = windowHeightPX
 }
 
-sizeOfWindow()
+if (homeArray[0] == 'home') {
+	sizeOfWindow()
+}
 
 $(window).on("load scroll", function(){
     $(".show").each(function(){
@@ -121,9 +126,6 @@ $(window).on("load scroll", function(){
 });
 
 // document.getElementById("first-three-schedules").remove();
-
-const home = window.document.getElementsByTagName('body')[0].className
-let homeArray = home.split(' ')
 
 // Scroll Click Down
 if (homeArray[0] == 'home') {

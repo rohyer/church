@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('elements/parts/part', 'main-image'); ?>
+<?php get_template_part('elements/parts/part', 'secondary-image'); ?>
 
 <section class="post-content">
     <div class="container-custom">
