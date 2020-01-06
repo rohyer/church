@@ -10,7 +10,7 @@
 <?php wp_body_open(); ?>
 
 <header id="header" class="d-none d-lg-block">
-	<div class="container-custom">
+	<div class="container-custom-h">
 		<div class="row">
 			<div id="header-content">
 				<div id="logo" class="d-flex justify-content-center justify-content-md-start col-md-4 col-lg-4 col-xl-4">
@@ -39,7 +39,7 @@
 </header>
 
 <header id="header-responsive" class="d-block d-lg-none">
-	<div class="container-fluid">
+	<div class="container-custom-h">
 		<div class="row">
 			<div id="header-content-responsive">
 				<div id="logo-responsive" class="d-flex justify-content-start align-items-center col-sm-10 col-9">

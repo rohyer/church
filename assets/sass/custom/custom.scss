@@ -5,6 +5,52 @@
     margin-right: auto;
     margin-left: auto;
 
+    @media (min-width: 300px) and (max-width: 991px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    @media (min-width: 576px) {
+        max-width: 680px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 900px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 1080px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1400px;
+    }
+}
+
+.container-custom-h{
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 300px) and (max-width: 576px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @media (min-width: 577px) and (max-width: 991px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    @media (min-width: 992px) {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+
+
     @media (min-width: 576px) {
         max-width: 680px;
     }

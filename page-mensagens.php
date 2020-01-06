@@ -2,7 +2,9 @@
 
     <div class="back-image-page">
         <?php get_template_part('elements/parts/part', 'secondary-image'); ?>
-        <h3>Mensagens</h3>
+        <div class="container-custom-h">
+            <h3>Mensagens</h3>
+        </div>
     </div>
 
     <section id="page-messages">

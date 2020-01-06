@@ -13654,6 +13654,10 @@ readers do not read off random characters that represent icons */
   padding-left: 25px;
   margin-right: auto;
   margin-left: auto; }
+  @media (min-width: 300px) and (max-width: 991px) {
+    .container-custom {
+      padding-right: 15px;
+      padding-left: 15px; } }
   @media (min-width: 576px) {
     .container-custom {
       max-width: 680px; } }
@@ -13665,6 +13669,37 @@ readers do not read off random characters that represent icons */
       max-width: 1080px; } }
   @media (min-width: 1200px) {
     .container-custom {
+      max-width: 1400px; } }
+
+.container-custom-h {
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 300px) and (max-width: 576px) {
+    .container-custom-h {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  @media (min-width: 577px) and (max-width: 991px) {
+    .container-custom-h {
+      padding-right: 30px;
+      padding-left: 30px; } }
+  @media (min-width: 992px) {
+    .container-custom-h {
+      padding-right: 40px;
+      padding-left: 40px; } }
+  @media (min-width: 576px) {
+    .container-custom-h {
+      max-width: 680px; } }
+  @media (min-width: 768px) {
+    .container-custom-h {
+      max-width: 900px; } }
+  @media (min-width: 992px) {
+    .container-custom-h {
+      max-width: 1080px; } }
+  @media (min-width: 1200px) {
+    .container-custom-h {
       max-width: 1400px; } }
 
 .menu-opened span.btn-icon-lines {
@@ -14486,8 +14521,13 @@ section#contact-image ul {
     font-size: 40px;
     color: #FFF;
     position: absolute;
-    bottom: 20px;
-    left: 85px; }
+    bottom: 20px; }
+    @media (max-width: 577px) and (min-width: 300px) {
+      .back-image-page h3 {
+        font-size: 35px; } }
+    @media (max-width: 768px) and (min-width: 576px) {
+      .back-image-page h3 {
+        font-size: 38px; } }
 
 section#page-contact {
   float: left;
@@ -14625,6 +14665,9 @@ section#main-schedules {
     font-size: 48px;
     font-weight: 300;
     letter-spacing: 2px; }
+    @media (max-width: 576px) and (min-width: 300px) {
+      section#main-schedules #title-schedules h6 {
+        font-size: 37px; } }
   section#main-schedules #schedules {
     float: left;
     width: 100%; }
@@ -14877,7 +14920,7 @@ section#main-schedules {
         list-style: none;
         float: left;
         height: auto;
-        margin: 15px 0; }
+        margin: 15px 5px; }
         section#main-schedules #schedules-responsive ul li.li-one-schedule-responsive:before {
           background-color: rgba(12, 20, 20, 0.4);
           content: '';
@@ -14931,9 +14974,13 @@ section#main-events {
   @media (max-width: 992px) and (min-width: 769px) {
     section#main-events {
       padding-top: 55px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (min-width: 577px) {
     section#main-events {
       padding-top: 50px; } }
+  @media (max-width: 576px) and (min-width: 300px) {
+    section#main-events {
+      padding-top: 30px;
+      padding-bottom: 50px; } }
   @media (min-width: 992px) {
     section#main-events #title-events {
       height: auto;
@@ -14951,6 +14998,9 @@ section#main-events {
     font-size: 48px;
     font-weight: 300;
     letter-spacing: 2px; }
+    @media (max-width: 576px) and (min-width: 300px) {
+      section#main-events #title-events h6 {
+        font-size: 37px; } }
   section#main-events #events {
     float: left;
     width: 100%; }
@@ -14965,6 +15015,9 @@ section#main-events {
         width: auto;
         height: auto;
         margin: 15px; }
+        @media (max-width: 576px) and (min-width: 300px) {
+          section#main-events #events ul li.event-post {
+            margin: 15px 5px; } }
         section#main-events #events ul li.event-post .event-content {
           width: auto;
           height: auto;
@@ -14974,11 +15027,21 @@ section#main-events {
             font-size: 28px;
             font-weight: 400;
             text-align: left; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              section#main-events #events ul li.event-post .event-content span {
+                float: left;
+                width: 100%;
+                text-align: center;
+                font-size: 25px; } }
           section#main-events #events ul li.event-post .event-content p {
             font-size: 18px;
             font-weight: 300;
             text-align: justify;
             margin-top: 10px; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              section#main-events #events ul li.event-post .event-content p {
+                float: left;
+                width: 100%; } }
       section#main-events #events ul li .event-img {
         position: relative; }
         section#main-events #events ul li .event-img img {
@@ -15051,8 +15114,8 @@ section#page-messages {
     list-style: none;
     padding: 0; }
     section#page-messages #messages ul li.message-post {
-      margin: 10px;
-      padding: 15px;
+      margin: 20px;
+      padding: 20px 10px;
       transition-duration: .3s; }
       @media (max-width: 991px) {
         section#page-messages #messages ul li.message-post {
@@ -15060,9 +15123,14 @@ section#page-messages {
       @media (min-width: 992px) {
         section#page-messages #messages ul li.message-post:hover {
           box-shadow: 0px 0px 10px #cdcdcd; } }
+      @media (max-width: 577px) {
+        section#page-messages #messages ul li.message-post {
+          margin: 8px;
+          box-shadow: 0px 0px 7px #cdcdcd; } }
       section#page-messages #messages ul li.message-post .message-img img {
-        width: 100%;
-        height: auto; }
+        width: 95%;
+        height: auto;
+        margin: 0 auto; }
       section#page-messages #messages ul li.message-post .message-content time {
         float: left;
         width: 100%;

@@ -33,6 +33,10 @@ section{
                 font-size: 48px;
                 font-weight: 300;
                 letter-spacing: 2px;
+
+                @media (max-width: 576px) and (min-width: 300px) {
+                    font-size: 37px;
+                }
             }
         }
 
@@ -388,7 +392,7 @@ section{
                         list-style: none;
                         float: left;
                         height: auto;
-                        margin: 15px 0;
+                        margin: 15px 5px;
 
                         &:before{
                             background-color: rgba(12, 20, 20, 0.4);
@@ -461,8 +465,13 @@ section{
             padding-top: 55px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 768px) and (min-width: 577px) {
             padding-top: 50px;
+        }
+
+        @media (max-width: 576px) and (min-width: 300px) {
+            padding-top: 30px;
+            padding-bottom: 50px;
         }
 
         #title-events{
@@ -486,6 +495,10 @@ section{
                 font-size: 48px;
                 font-weight: 300;
                 letter-spacing: 2px;
+
+                @media (max-width: 576px) and (min-width: 300px) {
+                    font-size: 37px;
+                }
             }
         }
 
@@ -507,6 +520,10 @@ section{
                         height: auto;
                         margin: 15px;
 
+                        @media (max-width: 576px) and (min-width: 300px) {
+                            margin: 15px 5px;
+                        }
+
                         .event-content{
                             width: auto;
                             height: auto;
@@ -517,6 +534,13 @@ section{
                                 font-size: 28px;
                                 font-weight: 400;
                                 text-align: left;
+
+                                @media (max-width: 576px) and (min-width: 300px) {
+                                    float: left;
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 25px;
+                                }
                             }
 
                             p{
@@ -524,6 +548,11 @@ section{
                                 font-weight: 300;
                                 text-align: justify;
                                 margin-top: 10px;
+
+                                @media (max-width: 576px) and (min-width: 300px) {
+                                    float: left;
+                                    width: 100%;
+                                }
                             }
                         }
                     }

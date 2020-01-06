@@ -1,5 +1,5 @@
     <footer id="footer">
-		<div class="container-custom">
+		<div class="container-custom-h">
 			<div class="row">
 				<div id="footer-content">
 					<ul class="col-xl-4 col-lg-4 col-md-3 col-sm-6">
