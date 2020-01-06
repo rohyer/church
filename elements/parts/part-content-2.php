@@ -1,5 +1,5 @@
 <section id="content-2" class="show">
-	<div class="container">
+	<div class="container-custom-i">
 		<div class="row">
 
 		<?php

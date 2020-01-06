@@ -13702,6 +13702,37 @@ readers do not read off random characters that represent icons */
     .container-custom-h {
       max-width: 1400px; } }
 
+.container-custom-i {
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 300px) and (max-width: 576px) {
+    .container-custom-i {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  @media (min-width: 577px) and (max-width: 991px) {
+    .container-custom-i {
+      padding-right: 30px;
+      padding-left: 30px; } }
+  @media (min-width: 992px) {
+    .container-custom-i {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 576px) {
+    .container-custom-i {
+      max-width: 680px; } }
+  @media (min-width: 768px) {
+    .container-custom-i {
+      max-width: 900px; } }
+  @media (min-width: 992px) {
+    .container-custom-i {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container-custom-i {
+      max-width: 1140px; } }
+
 .menu-opened span.btn-icon-lines {
   float: left;
   position: relative;
@@ -14101,10 +14132,9 @@ section#content-3 {
   section#content-3 #first-content-3 {
     width: auto;
     left: 0;
-    top: 0;
-    padding: 0; }
+    top: 0; }
     section#content-3 #first-content-3 img {
-      width: 585px;
+      width: 570px;
       height: auto; }
       @media (max-width: 1199px) and (min-width: 992px) {
         section#content-3 #first-content-3 img {
@@ -14180,9 +14210,9 @@ section#content-4 {
       transition-duration: 0.3s; }
   section#content-4 span#contact-message {
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 145px;
-    width: 80%;
+    width: 90%;
     text-align: center;
     color: #ffffff; }
     @media (max-width: 991px) and (min-width: 768px) {
