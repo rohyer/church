@@ -59,7 +59,6 @@
 	</div>
 </header>
 
-
 <nav id="main-menu-responsive" class="d-block d-lg-none">
 	<div class="container-custom">
 		<ul>
@@ -69,5 +68,10 @@
 			<li><a href="./mensagens">Mensagens</a></li>
 			<li><a href="./contato">Contato</a></li>
 		</ul>
+		<div id="menu-medias-responsive">
+			<a href="<?php echo get_theme_mod( 'facebook' ) ?>" target="__blank">
+				<i class="fab fa-facebook"></i>
+            </a>
+		</div>
 	</div>
 </nav>

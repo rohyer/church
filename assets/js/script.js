@@ -107,8 +107,23 @@ function sizeOfWindow() {
 	mainImage.style.height = windowHeightPX
 }
 
+function sizeOfWindowToMenu() {
+	let headerMenuResponsive = window.document.getElementById('header-responsive')
+	let heightHeaderMenuResponsive = headerMenuResponsive.offsetHeight
+
+	let mainMenuResponsive = window.document.getElementById('main-menu-responsive')
+	let windowHeight = mainMenuResponsive.offsetHeight
+
+	valueHeight = windowHeight - heightHeaderMenuResponsive
+	mainMenuResponsive.style.height = valueHeight + 'px'
+}
+
 if (homeArray[0] == 'home') {
 	sizeOfWindow()
+}
+
+if(homeArray[0] == 'home') {
+	sizeOfWindowToMenu()
 }
 
 $(window).on("load scroll", function(){

@@ -23,7 +23,7 @@
                 <p><?php echo get_theme_mod( 'email' ) ?></p>
 
                 <h6>E siga nosso facebook:</h6>
-                <a href="<?php echo get_theme_mod( 'facebook' ) ?>">
+                <a href="<?php echo get_theme_mod( 'facebook' ) ?>" target="__blank">
                     <i class="fab fa-facebook-square"></i>
                 </a>
                     
