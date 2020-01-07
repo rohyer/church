@@ -13983,13 +13983,19 @@ section#main-image {
       z-index: 99;
       opacity: 0; }
     section#main-image i#arrow-down {
-      left: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      width: 50px;
       bottom: 80px;
       color: #FFFFFF;
-      -webkit-animation: animation-cycle 1.0s infinite;
       animation: animation-cycle 1.0s infinite;
       animation-timing-function: ease-in-out;
-      animation-direction: alternate; }
+      animation-direction: alternate;
+      -webkit-animation: animation-cycle 1.0s infinite;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-direction: alternate; }
 @-webkit-keyframes animation-cycle {
   from {
     bottom: 80px; }
@@ -15160,6 +15166,34 @@ section#page-messages {
       margin: 20px;
       padding: 20px 10px;
       transition-duration: .3s; }
+      @media (min-width: 1200px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 490px;
+          max-height: 525px; } }
+      @media (max-width: 1199px) and (min-width: 992px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 485px;
+          max-height: 520px; } }
+      @media (max-width: 991px) and (min-width: 769px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 490px;
+          max-height: 555px; } }
+      @media (max-width: 768px) and (min-width: 577px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 465px;
+          max-height: 600px; } }
+      @media (max-width: 576px) and (min-width: 501px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 460px;
+          max-height: 550px; } }
+      @media (max-width: 500px) and (min-width: 401px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 450px;
+          max-height: 550px; } }
+      @media (max-width: 400px) and (min-width: 300px) {
+        section#page-messages #messages ul li.message-post {
+          min-height: 415px;
+          max-height: 550px; } }
       @media (max-width: 991px) {
         section#page-messages #messages ul li.message-post {
           box-shadow: 0px 0px 10px #cdcdcd; } }
@@ -15170,19 +15204,46 @@ section#page-messages {
         section#page-messages #messages ul li.message-post {
           margin: 8px;
           box-shadow: 0px 0px 7px #cdcdcd; } }
-      section#page-messages #messages ul li.message-post .message-img img {
-        width: 95%;
-        height: auto;
-        margin: 0 auto; }
-      section#page-messages #messages ul li.message-post .message-content time {
-        float: left;
-        width: 100%;
-        font-size: 15px;
-        margin-top: 5px; }
-      section#page-messages #messages ul li.message-post .message-content span {
-        font-size: 30px;
-        text-align: left; }
-      section#page-messages #messages ul li.message-post .message-content p {
-        margin-bottom: 0; }
+      section#page-messages #messages ul li.message-post .message-img {
+        display: flex;
+        align-items: start; }
+        @media (min-width: 1200px) {
+          section#page-messages #messages ul li.message-post .message-img {
+            min-height: 217px;
+            max-height: 225px; } }
+        @media (max-width: 1199px) and (min-width: 992px) {
+          section#page-messages #messages ul li.message-post .message-img {
+            min-height: 165px;
+            max-height: 165px; } }
+        @media (max-width: 991px) and (min-width: 871px) {
+          section#page-messages #messages ul li.message-post .message-img {
+            min-height: 220px;
+            max-height: 220px; } }
+        @media (max-width: 870px) and (min-width: 769px) {
+          section#page-messages #messages ul li.message-post .message-img {
+            min-height: 207px;
+            max-height: 207px; } }
+        section#page-messages #messages ul li.message-post .message-img img {
+          width: 95%;
+          height: auto;
+          margin: 0 auto; }
+      section#page-messages #messages ul li.message-post .message-content {
+        padding: 10px; }
+        section#page-messages #messages ul li.message-post .message-content #msgmsg time {
+          float: left;
+          width: 100%;
+          font-size: 15px;
+          margin-top: 5px; }
+        section#page-messages #messages ul li.message-post .message-content #msgmsg span {
+          font-size: 30px;
+          text-align: left; }
+          @media (max-width: 991px) and (min-width: 768px) {
+            section#page-messages #messages ul li.message-post .message-content #msgmsg span {
+              font-size: 28px; } }
+          @media (max-width: 769px) {
+            section#page-messages #messages ul li.message-post .message-content #msgmsg span {
+              font-size: 26px; } }
+        section#page-messages #messages ul li.message-post .message-content #msgmsg p {
+          margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

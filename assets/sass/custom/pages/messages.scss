@@ -47,7 +47,42 @@ section{
                         margin: 20px;
                         padding: 20px 10px;
                         transition-duration: .3s;
+
+                        @media (min-width: 1200px) {
+                            min-height: 490px;
+                            max-height: 525px;
+                        }
+
+                        @media (max-width: 1199px) and (min-width: 992px) {
+                            min-height: 485px;
+                            max-height: 520px;
+                        }
+
+                        @media (max-width: 991px) and (min-width: 769px) {
+                            min-height: 490px;
+                            max-height: 555px;
+                        }
+
+                        @media (max-width: 768px) and (min-width: 577px) {
+                            min-height: 465px;
+                            max-height: 600px;
+                        }
                         
+                        @media (max-width: 576px) and (min-width: 501px) {
+                            min-height: 460px;
+                            max-height: 550px;
+                        }
+
+                        @media (max-width: 500px) and (min-width: 401px) {
+                            min-height: 450px;
+                            max-height: 550px;
+                        }
+
+                        @media (max-width: 400px) and (min-width: 300px) {
+                            min-height: 415px;
+                            max-height: 550px;
+                        }
+                         
 
                         @media (max-width: 991px) {
                             box-shadow: 0px 0px 10px #cdcdcd;
@@ -65,6 +100,29 @@ section{
                         }
 
                         .message-img{
+                            display: flex;
+                            align-items: start;
+
+                            @media (min-width: 1200px) {
+                                min-height: 217px;
+                                max-height: 225px;
+                            }
+
+                            @media (max-width: 1199px) and (min-width: 992px) {
+                                min-height: 165px;
+                                max-height: 165px;
+                            }
+
+                            @media (max-width: 991px) and (min-width: 871px) {
+                                min-height: 220px;
+                                max-height: 220px;
+                            }
+
+                            @media (max-width: 870px) and (min-width: 769px) {
+                                min-height: 207px;
+                                max-height: 207px;
+                            }
+
                             img{
                                 width: 95%;
                                 height: auto;
@@ -73,20 +131,32 @@ section{
                         }
     
                         .message-content{
-                            time{
-                                float: left;
-                                width: 100%;
-                                font-size: 15px;
-                                margin-top: 5px;
-                            }
+                            padding: 10px;
 
-                            span{
-                                font-size: 30px;
-                                text-align: left;
-                            }
-                            
-                            p{
-                                margin-bottom: 0;
+                            #msgmsg {
+                                time{
+                                    float: left;
+                                    width: 100%;
+                                    font-size: 15px;
+                                    margin-top: 5px;
+                                }
+
+                                span{
+                                    font-size: 30px;
+                                    text-align: left;
+
+                                    @media (max-width: 991px) and (min-width: 768px) {
+                                        font-size: 28px;
+                                    }
+
+                                    @media (max-width: 769px) {
+                                        font-size: 26px;
+                                    }
+                                }
+                                
+                                p{
+                                    margin-bottom: 0;
+                                }
                             }
                         }
                     }
