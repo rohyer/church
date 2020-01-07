@@ -95,36 +95,55 @@ $('#messages ul').owlCarousel({
 	}
 });
 
+// Pega a 1º classe do body
 const home = window.document.getElementsByTagName('body')[0].className
 let homeArray = home.split(' ')
 
+// Redimensiona o tamanho da imagem principal na Home
 function sizeOfWindow() {
 	let mainImage = window.document.getElementById('main-image')
 	let windowHeight = window.innerHeight
-	console.log(windowHeight)
 	let windowHeightPX = windowHeight + 'px'
 
 	mainImage.style.height = windowHeightPX
 }
+if (homeArray[0] == 'home') {
+	sizeOfWindow()
+}
 
+// Define a altra do menu de acordo com o tamanho vertical do dispositivo
 function sizeOfWindowToMenu() {
+	let windowWidth = window.innerWidth
+
 	let headerMenuResponsive = window.document.getElementById('header-responsive')
 	let heightHeaderMenuResponsive = headerMenuResponsive.offsetHeight
 
 	let mainMenuResponsive = window.document.getElementById('main-menu-responsive')
 	let windowHeight = mainMenuResponsive.offsetHeight
 
-	valueHeight = windowHeight - heightHeaderMenuResponsive
-	mainMenuResponsive.style.height = valueHeight + 'px'
+	if (windowWidth <= 991) {
+		valueHeight = windowHeight - heightHeaderMenuResponsive
+		mainMenuResponsive.style.height = valueHeight + 'px'
+		console.log(valueHeight)
+	} else {
+		mainMenuResponsive.style.height = '100%'
+	}
+}
+sizeOfWindowToMenu()
+
+// Redimensiona a altura da height
+window.addEventListener('resize', adjustMenuResponsive)
+function adjustMenuResponsive() {
+	let windowWidth = window.innerWidth
+	let mainMenuResponsive = window.document.getElementById('main-menu-responsive')
+
+	if (windowWidth >= 992) {
+		mainMenuResponsive.style.height = '100%'
+	} else {
+		mainMenuResponsive.style.height = '91%'
+	}	
 }
 
-if (homeArray[0] == 'home') {
-	sizeOfWindow()
-}
-
-if(homeArray[0] == 'home') {
-	sizeOfWindowToMenu()
-}
 
 $(window).on("load scroll", function(){
     $(".show").each(function(){
@@ -142,18 +161,25 @@ $(window).on("load scroll", function(){
 
 // document.getElementById("first-three-schedules").remove();
 
-// Scroll Click Down
+// Clique para descer na Home
 if (homeArray[0] == 'home') {
+	let windowWidth = window.innerWidth
 	const arrowDownGlobal = window.document.getElementById('arrow-down')
 	arrowDownGlobal.addEventListener('click', goDown)
 	function goDown() {
-		let mainImage = window.document.getElementById('content-1').offsetTop
-		scrollToPosition(mainImage)
+		if (windowWidth >= 992) {
+			let mainImage = window.document.getElementById('content-1').offsetTop
+			scrollToPosition(mainImage)
+		} else {
+			let mainImage = window.document.getElementById('content-1').offsetTop
+			let heightHeaderMenuResponsive = window.document.getElementById('header-responsive').offsetHeight
+			scrollToPosition(mainImage - heightHeaderMenuResponsive)
+		}
 	}
 }
 
 
-// Scroll Click Top
+// Clique para subir na Home
 if (homeArray[0] == 'home') {
 	const arrowTopGlobal = window.document.getElementById('arrow-top')
 	arrowTopGlobal.addEventListener('click', goTop)
@@ -163,10 +189,10 @@ if (homeArray[0] == 'home') {
 	}
 }
 
+// Suviazação do scroll por clique
 function scrollToPosition(toPosition) {
 	smoothScrollTo(toPosition, 1000)
 }
-
 function smoothScrollTo(endY, duration) {
 	const startY = window.scrollY || window.pageYOffset
 	const distanceY = endY - startY
@@ -189,6 +215,7 @@ function smoothScrollTo(endY, duration) {
 	}, 1000 / 60)
 }
 
+// Apresenta e esconde Arrow Down
 if (homeArray[0] == 'home') {
 	window.addEventListener('scroll', function(e) {
 		let y = window.pageYOffset
@@ -205,6 +232,7 @@ if (homeArray[0] == 'home') {
 	})
 }
 
+// Apresenta e esconde Arrow Top
 if (homeArray[0] == 'home') {
 	window.addEventListener('scroll', function(e) {
 		let y = window.pageYOffset

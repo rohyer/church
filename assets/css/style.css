@@ -13868,6 +13868,9 @@ nav#main-menu-responsive {
               font-weight: 400;
               float: left;
               margin: 0 10px; }
+              @media (max-width: 1020px) and (min-width: 992px) {
+                #header #header-content #header-menu ul .menu-menu-container ul li {
+                  font-size: 15px; } }
               @media (max-width: 991px) {
                 #header #header-content #header-menu ul .menu-menu-container ul li {
                   font-size: 14px;
