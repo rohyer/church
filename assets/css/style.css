@@ -14780,31 +14780,31 @@ section#main-schedules {
                   font-size: 25px;
                   left: 0;
                   padding: 15px 12px 15px 12px; } }
-          section#main-schedules #schedules ul li#first-three-schedules ul li#cult {
+          section#main-schedules #schedules ul li#first-three-schedules ul li.cult {
             margin: 15px 15px 10px; }
             @media (min-width: 1200px) {
-              section#main-schedules #schedules ul li#first-three-schedules ul li#cult {
+              section#main-schedules #schedules ul li#first-three-schedules ul li.cult {
                 width: 58%; } }
             @media (max-width: 1199px) and (min-width: 992px) {
-              section#main-schedules #schedules ul li#first-three-schedules ul li#cult {
+              section#main-schedules #schedules ul li#first-three-schedules ul li.cult {
                 width: 57%; } }
-            section#main-schedules #schedules ul li#first-three-schedules ul li#cult img {
+            section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
               object-fit: cover;
               object-position: center;
               width: 100%;
               height: 480px; }
               @media (max-width: 991px) and (min-width: 768px) {
-                section#main-schedules #schedules ul li#first-three-schedules ul li#cult img {
+                section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
                   object-position: top;
                   height: 300px; } }
               @media (max-width: 768px) and (min-width: 577px) {
-                section#main-schedules #schedules ul li#first-three-schedules ul li#cult img {
+                section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
                   object-position: top;
                   height: 180px; } }
-            section#main-schedules #schedules ul li#first-three-schedules ul li#cult span {
+            section#main-schedules #schedules ul li#first-three-schedules ul li.cult span {
               font-size: 40px;
               padding: 15px; }
-            section#main-schedules #schedules ul li#first-three-schedules ul li#cult p {
+            section#main-schedules #schedules ul li#first-three-schedules ul li.cult p {
               font-size: 30px;
               padding: 15px; }
           section#main-schedules #schedules ul li#first-three-schedules ul li#communion, section#main-schedules #schedules ul li#first-three-schedules ul li#pray {
@@ -14830,6 +14830,32 @@ section#main-schedules {
               @media (max-width: 768px) and (min-width: 577px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li#communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#pray img {
                   height: 200px; } }
+          section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray {
+            width: 38%; }
+            @media (min-width: 992px) {
+              section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray {
+                float: right;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                margin-right: 15px; } }
+            @media (max-width: 991px) and (min-width: 577px) {
+              section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray {
+                width: initial;
+                margin: 10px 15px; } }
+            section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray img {
+              object-fit: cover;
+              object-position: center;
+              width: 100%;
+              height: 480px;
+              margin-right: 0; }
+              @media (max-width: 991px) and (min-width: 768px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray img {
+                  object-position: top;
+                  height: 300px; } }
+              @media (max-width: 768px) and (min-width: 577px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray img {
+                  object-position: top;
+                  height: 180px; } }
           @media (min-width: 992px) {
             section#main-schedules #schedules ul li#first-three-schedules ul li#communion {
               margin-bottom: 5px; } }
@@ -14846,12 +14872,12 @@ section#main-schedules {
       section#main-schedules #schedules ul li#second-three-schedules {
         float: left;
         width: 100%; }
-        section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule {
+        section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule {
           position: relative;
           list-style: none;
           float: left;
           height: auto; }
-          section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule:before {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule:before {
             background-color: rgba(12, 20, 20, 0.4);
             content: '';
             display: block;
@@ -14860,12 +14886,12 @@ section#main-schedules {
             position: absolute;
             left: 0;
             top: 0; }
-          section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule img {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule img {
             float: left;
             width: 100%;
             height: auto;
             margin-right: 5%; }
-          section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule span {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule span {
             position: absolute;
             top: 5px;
             left: 15px;
@@ -14876,11 +14902,11 @@ section#main-schedules {
             width: 100%;
             padding: 15px; }
             @media (max-width: 768px) and (min-width: 577px) {
-              section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule span {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule span {
                 font-size: 28px;
                 left: 0;
                 padding: 15px 12px 15px 12px; } }
-          section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule p {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule p {
             position: absolute;
             top: 60px;
             left: 15px;
@@ -14891,68 +14917,94 @@ section#main-schedules {
             width: 100%;
             padding: 15px; }
             @media (max-width: 768px) and (min-width: 577px) {
-              section#main-schedules #schedules ul li#second-three-schedules ul li.li-one-schedule p {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.li-one-schedule p {
                 font-size: 25px;
                 left: 0;
                 padding: 15px 12px 15px 12px; } }
-        section#main-schedules #schedules ul li#second-three-schedules ul li#project {
+        section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project {
           margin: 15px 15px 10px; }
           @media (min-width: 1200px) {
-            section#main-schedules #schedules ul li#second-three-schedules ul li#project {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project {
               width: 58%; } }
           @media (max-width: 1199px) and (min-width: 992px) {
-            section#main-schedules #schedules ul li#second-three-schedules ul li#project {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project {
               width: 57%; } }
-          section#main-schedules #schedules ul li#second-three-schedules ul li#project img {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
             object-fit: cover;
             object-position: center;
             width: 100%;
             height: 480px; }
             @media (max-width: 991px) and (min-width: 768px) {
-              section#main-schedules #schedules ul li#second-three-schedules ul li#project img {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
                 height: 300px; } }
             @media (max-width: 768px) and (min-width: 577px) {
-              section#main-schedules #schedules ul li#second-three-schedules ul li#project img {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
                 height: 180px; } }
-          section#main-schedules #schedules ul li#second-three-schedules ul li#project span {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project span {
             font-size: 40px;
             padding: 15px; }
-          section#main-schedules #schedules ul li#second-three-schedules ul li#project p {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project p {
             font-size: 30px;
             padding: 15px; }
-        section#main-schedules #schedules ul li#second-three-schedules ul li#young, section#main-schedules #schedules ul li#second-three-schedules ul li#school {
+        section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
           width: 38%; }
           @media (min-width: 992px) {
-            section#main-schedules #schedules ul li#second-three-schedules ul li#young, section#main-schedules #schedules ul li#second-three-schedules ul li#school {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
               float: right;
               margin-top: 15px;
               margin-bottom: 10px;
               margin-right: 15px; } }
           @media (max-width: 991px) and (min-width: 768px) {
-            section#main-schedules #schedules ul li#second-three-schedules ul li#young, section#main-schedules #schedules ul li#second-three-schedules ul li#school {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
               width: 47.5%; } }
           @media (max-width: 768px) and (min-width: 577px) {
-            section#main-schedules #schedules ul li#second-three-schedules ul li#young, section#main-schedules #schedules ul li#second-three-schedules ul li#school {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
               width: 46.5%; } }
-          section#main-schedules #schedules ul li#second-three-schedules ul li#young img, section#main-schedules #schedules ul li#second-three-schedules ul li#school img {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school img {
             object-fit: cover;
             object-position: center;
             width: 100%;
             height: 230px;
             margin-right: 0; }
             @media (max-width: 768px) and (min-width: 577px) {
-              section#main-schedules #schedules ul li#second-three-schedules ul li#young img, section#main-schedules #schedules ul li#second-three-schedules ul li#school img {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school img {
                 height: 200px; } }
+        section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school {
+          width: 38%; }
+          @media (min-width: 992px) {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school {
+              float: right;
+              margin-top: 15px;
+              margin-bottom: 10px;
+              margin-right: 15px; } }
+          @media (max-width: 991px) and (min-width: 577px) {
+            section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school {
+              width: initial;
+              margin: 10px 15px; } }
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 480px;
+            margin-right: 0; }
+            @media (max-width: 991px) and (min-width: 768px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school img {
+                object-position: center;
+                height: 300px; } }
+            @media (max-width: 768px) and (min-width: 577px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school img {
+                object-position: center;
+                height: 180px; } }
         @media (min-width: 992px) {
-          section#main-schedules #schedules ul li#second-three-schedules ul li#school {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
             margin-bottom: 5px; } }
         @media (max-width: 991px) and (min-width: 577px) {
-          section#main-schedules #schedules ul li#second-three-schedules ul li#school {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
             float: left;
             margin-bottom: 5px;
             margin-left: 15px; } }
         @media (max-width: 991px) and (min-width: 577px) {
-          section#main-schedules #schedules ul li#second-three-schedules ul li#young {
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young {
             float: right;
             margin-bottom: 5px;
             margin-right: 15px; } }

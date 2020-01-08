@@ -25,14 +25,23 @@
                     <div class="col-12">
                         <ul class="owl-theme owl-carousel aul">
                             <li id="first-three-schedules" class="abcde li-one-schedule">
-                                <ul>
-                                    <li id="cult" class="li-one-schedule">
-                                    <?php
-                                    $args = array('p' => '46');
-                                    $query = new WP_Query($args);
+                                <?php
+                                $argsCult = array('p' => '46');
+                                $queryCult = new WP_Query($argsCult);
 
-                                    if ( $query->have_posts() ) {
-                                        $query->the_post();
+                                $argsCommunion = array('p' => '52');
+                                $queryCommunion = new WP_Query($argsCommunion);
+
+                                $argsPray = array('p' => '56');
+                                $queryPray = new WP_Query($argsPray);
+                                ?>
+
+                                <?php if ($queryCommunion->have_posts() && $queryPray->have_posts()) { ?>
+                                <ul>
+                                    <li class="cult li-one-schedule">
+                                    <?php
+                                    if ( $queryCult->have_posts() ) {
+                                        $queryCult->the_post();
                                     ?>
                                         <?php the_post_thumbnail() ?>
                                         <span><?php the_title() ?></span>
@@ -42,11 +51,8 @@
 
                                     <li id="communion" class="li-one-schedule d-flex justify-content-around">
                                     <?php
-                                    $args = array('p' => '52');
-                                    $query = new WP_Query($args);
-
-                                    if ( $query->have_posts() ) {
-                                        $query->the_post();
+                                    if ( $queryCommunion->have_posts() ) {
+                                        $queryCommunion->the_post();
                                     ?>
                                         <?php the_post_thumbnail() ?>
                                         <span><?php the_title() ?></span>
@@ -56,11 +62,8 @@
 
                                     <li id="pray" class="li-one-schedule d-flex justify-content-end">
                                     <?php
-                                    $args = array('p' => '56');
-                                    $query = new WP_Query($args);
-
-                                    if ( $query->have_posts() ) {
-                                        $query->the_post();
+                                    if ( $queryPray->have_posts() ) {
+                                        $queryPray->the_post();
                                     ?>
                                         <?php the_post_thumbnail() ?>
                                         <span><?php the_title() ?></span>
@@ -68,16 +71,78 @@
                                     <?php } ?>
                                     </li>
                                 </ul>
-                            </li>
-                            <li id="second-three-schedules" class="li-one-schedule">
-                                <ul>
-                                    <li id="project" class="li-one-schedule">
-                                    <?php
-                                    $args = array('p' => '58');
-                                    $query = new WP_Query($args);
 
-                                    if ( $query->have_posts() ) {
-                                        $query->the_post();
+                                <?php } elseif ($queryCommunion->have_posts() && !($queryPray->have_posts())) { ?>
+                                <ul>
+                                    <li class="cult li-one-schedule">
+                                    <?php
+                                    if ( $queryCult->have_posts() ) {
+                                        $queryCult->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>
+                                    <?php } ?>
+                                    </li>
+
+                                    <li id="all-communion" class="li-one-schedule d-flex justify-content-around">
+                                    <?php
+                                    if ( $queryCommunion->have_posts() ) {
+                                        $queryCommunion->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>  
+                                    <?php } ?>
+                                    </li>
+                                </ul>
+
+                                <?php } elseif (!($queryCommunion->have_posts()) && $queryPray->have_posts()) { ?>
+                                <ul>
+                                    <li class="cult li-one-schedule">
+                                    <?php
+                                    if ( $queryCult->have_posts() ) {
+                                        $queryCult->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>
+                                    <?php } ?>
+                                    </li>
+
+                                    <li id="all-pray" class="li-one-schedule d-flex justify-content-end">
+                                    <?php
+                                    if ( $queryPray->have_posts() ) {
+                                        $queryPray->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>
+                                    <?php } ?>
+                                    </li>
+                                </ul>
+                                <?php } ?>
+                            </li>
+
+                            <!-- Segunda LI -->
+                            <li id="second-three-schedules" class="li-one-schedule">
+                                <?php
+                                $argsProject = array('p' => '58');
+                                $queryProject = new WP_Query($argsProject);
+                                            
+                                $argsSchool = array('p' => '60');
+                                $querySchool = new WP_Query($argsSchool);
+
+                                $argsYoung = array('p' => '63');
+                                $queryYoung = new WP_Query($argsYoung);
+                                ?>
+
+                                <?php if ($querySchool->have_posts() && $queryYoung->have_posts()) { ?>
+                                <ul class="three-schedules">
+                                    <li class="project li-one-schedule">
+                                    <?php
+                                    if ( $queryProject->have_posts() ) {
+                                        $queryProject->the_post();
                                     ?>
                                         <?php the_post_thumbnail() ?>
                                         <span><?php the_title() ?></span>
@@ -87,11 +152,8 @@
 
                                     <li id="school" class="li-one-schedule">
                                     <?php
-                                    $args = array('p' => '60');
-                                    $query = new WP_Query($args);
-
-                                    if ( $query->have_posts() ) {
-                                        $query->the_post();
+                                    if ( $querySchool->have_posts() ) {
+                                        $querySchool->the_post();
                                     ?>
                                         <?php the_post_thumbnail() ?>
                                         <span><?php the_title() ?></span>
@@ -101,11 +163,8 @@
 
                                     <li id="young" class="li-one-schedule">
                                     <?php
-                                    $args = array('p' => '63');
-                                    $query = new WP_Query($args);
-
-                                    if ( $query->have_posts() ) {
-                                        $query->the_post();
+                                    if ( $queryYoung->have_posts() ) {
+                                        $queryYoung->the_post();
                                     ?>
                                         <?php the_post_thumbnail() ?>
                                         <span><?php the_title() ?></span>
@@ -113,6 +172,58 @@
                                     <?php } ?>
                                     </li>
                                 </ul>
+
+                                <?php } elseif ($queryYoung->have_posts() && !($querySchool->have_posts())) { ?>
+                                <ul class="three-schedules"> 
+                                    <li class="project li-one-schedule">
+                                    <?php
+                                    if ( $queryProject->have_posts() ) {
+                                        $queryProject->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>  
+                                    <?php } ?>
+                                    </li>
+
+                                    <li id="all-young" class="li-one-schedule">
+                                    <?php
+                                    if ( $queryYoung->have_posts() ) {
+                                        $queryYoung->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>  
+                                    <?php } ?>
+                                    </li>
+                                </ul>
+
+                                <?php } elseif (!($queryYoung->have_posts()) && $querySchool->have_posts()) { ?>
+                                <ul class="three-schedules"> 
+                                    <li class="project li-one-schedule">
+                                    <?php
+                                    if ( $queryProject->have_posts() ) {
+                                        $queryProject->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>  
+                                    <?php } ?>
+                                    </li>
+
+                                    <li id="all-school" class="li-one-schedule">
+                                    <?php
+                                    if ( $querySchool->have_posts() ) {
+                                        $querySchool->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>  
+                                    <?php } ?>
+                                    </li>
+
+                                </ul>
+                                <?php } ?>
                             </li>
                         </ul>
                     </div>
@@ -127,7 +238,7 @@
                         <ul class="owl-carousel owl-theme">
                             <li id="cult-responsive" class="li-one-schedule-responsive">
                             <?php
-                            $args = array('p' => '46');
+                            $args = array('category_name' => 'programas');
                             $query = new WP_Query($args);
 
                             if ( $query->have_posts() ) {

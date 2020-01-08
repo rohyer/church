@@ -121,7 +121,7 @@ section{
                                     }
                                 }
 
-                                &#cult{
+                                &.cult{
                                     margin: 15px 15px 10px;
 
                                     @media (min-width: 1200px) {
@@ -191,6 +191,41 @@ section{
                                     }
                                 }
 
+                                &#all-communion, &#all-pray{
+                                    width: 38%;
+
+                                    @media (min-width: 992px) {
+                                        float: right;
+                                        margin-top: 15px;
+                                        margin-bottom: 10px;
+                                        margin-right: 15px;
+                                    }
+
+                                    @media(max-width: 991px) and (min-width: 577px) {
+                                        width: initial;
+                                        margin: 10px 15px;
+                                    }
+
+                                    img{
+                                        object-fit: cover;
+                                        object-position: center;
+                                        width: 100%;
+                                        height: 480px;
+                                        margin-right: 0;
+
+                                        @media(max-width: 991px) and (min-width: 768px) {
+                                            object-position: top;
+                                            height: 300px;
+                                        }
+
+                                        @media(max-width: 768px) and (min-width: 577px) {
+                                            object-position: top;
+                                            height: 180px;
+                                        }
+
+                                    }
+                                }
+
                                 &#communion{
                                     @media (min-width: 992px) {
                                         margin-bottom: 5px;
@@ -219,154 +254,192 @@ section{
                         width: 100%;
 
                         ul{
-                            li{
-                                &.li-one-schedule{
-                                    position: relative;
-                                    list-style: none;
-                                    float: left;
-                                    height: auto;
-
-                                    &:before{
-                                        background-color: rgba(12, 20, 20, 0.4);
-                                        content: '';
-                                        display: block;
-                                        width: 100%;
-                                        height: 100%;
-                                        position: absolute;
-                                        left: 0;
-                                        top: 0;
-                                    }
-            
-                                    img{
+                            &.three-schedules {
+                                li{
+                                    &.li-one-schedule{
+                                        position: relative;
+                                        list-style: none;
                                         float: left;
-                                        width: 100%;
                                         height: auto;
-                                        margin-right: 5%;
-                                    }
-            
-                                    span{
-                                        position: absolute;
-                                        top: 5px;
-                                        left: 15px;
-                                        font-size: 32px;
-                                        font-weight: 300;
-                                        color: #ffffff;
-                                        float: left;
-                                        width: 100%;
-                                        padding: 15px;
 
-                                        @media(max-width: 768px) and (min-width: 577px) {
-                                            font-size: 28px;
+                                        &:before{
+                                            background-color: rgba(12, 20, 20, 0.4);
+                                            content: '';
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
                                             left: 0;
-                                            padding: 15px 12px 15px 12px;
+                                            top: 0;
                                         }
-                                    }
-            
-                                    p{
-                                        position: absolute;
-                                        top: 60px;
-                                        left: 15px;
-                                        font-size: 25px;
-                                        font-weight: 300;
-                                        color: #ffffff;
-                                        float: left;
-                                        width: 100%;
-                                        padding: 15px;
+                
+                                        img{
+                                            float: left;
+                                            width: 100%;
+                                            height: auto;
+                                            margin-right: 5%;
+                                        }
+                
+                                        span{
+                                            position: absolute;
+                                            top: 5px;
+                                            left: 15px;
+                                            font-size: 32px;
+                                            font-weight: 300;
+                                            color: #ffffff;
+                                            float: left;
+                                            width: 100%;
+                                            padding: 15px;
 
-                                        @media(max-width: 768px) and (min-width: 577px) {
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                font-size: 28px;
+                                                left: 0;
+                                                padding: 15px 12px 15px 12px;
+                                            }
+                                        }
+                
+                                        p{
+                                            position: absolute;
+                                            top: 60px;
+                                            left: 15px;
                                             font-size: 25px;
-                                            left: 0;
-                                            padding: 15px 12px 15px 12px;
+                                            font-weight: 300;
+                                            color: #ffffff;
+                                            float: left;
+                                            width: 100%;
+                                            padding: 15px;
+
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                font-size: 25px;
+                                                left: 0;
+                                                padding: 15px 12px 15px 12px;
+                                            }
                                         }
                                     }
-                                }
 
-                                &#project{
-                                    margin: 15px 15px 10px;
-                                    
-                                    @media (min-width: 1200px) {
-                                        width: 58%;
+                                    &.project{
+                                        margin: 15px 15px 10px;
+                                        
+                                        @media (min-width: 1200px) {
+                                            width: 58%;
+                                        }
+
+                                        @media (max-width: 1199px) and (min-width: 992px) {
+                                            width: 57%;
+                                        }
+                                        
+
+                                        img{
+                                            object-fit: cover;
+                                            object-position: center;
+                                            width: 100%;
+                                            height: 480px;
+
+                                            @media(max-width: 991px) and (min-width: 768px) {
+                                                height: 300px;
+                                            }
+
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                height: 180px;
+                                            }
+                                        }
+
+                                        span{
+                                            font-size: 40px;
+                                            padding: 15px;
+                                        }
+
+                                        p{
+                                            font-size: 30px;
+                                            padding: 15px;
+                                        }
                                     }
 
-                                    @media (max-width: 1199px) and (min-width: 992px) {
-                                        width: 57%;
-                                    }
-                                    
+                                    &#young, &#school{
+                                        width: 38%;
 
-                                    img{
-                                        object-fit: cover;
-                                        object-position: center;
-                                        width: 100%;
-                                        height: 480px;
+                                        @media (min-width: 992px) {
+                                            float: right;
+                                            margin-top: 15px;
+                                            margin-bottom: 10px;
+                                            margin-right: 15px;
+                                        }
 
                                         @media(max-width: 991px) and (min-width: 768px) {
-                                            height: 300px;
+                                            width: 47.5%;
                                         }
 
                                         @media(max-width: 768px) and (min-width: 577px) {
-                                            height: 180px;
+                                            width: 46.5%;
+                                        }
+
+                                        img{
+                                            object-fit: cover;
+                                            object-position: center;
+                                            width: 100%;
+                                            height: 230px;
+                                            margin-right: 0;
+
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                height: 200px;
+                                            }
+                                        }  
+                                    }
+
+                                    &#all-young, &#all-school{
+                                        width: 38%;
+
+                                        @media (min-width: 992px) {
+                                            float: right;
+                                            margin-top: 15px;
+                                            margin-bottom: 10px;
+                                            margin-right: 15px;
+                                        }
+
+                                        @media (max-width: 991px) and (min-width: 577px) {
+                                            width: initial;
+                                            margin: 10px 15px;
+                                        }
+
+                                        img{
+                                            object-fit: cover;
+                                            object-position: center;
+                                            width: 100%;
+                                            height: 480px;
+                                            margin-right: 0;
+
+                                            @media(max-width: 991px) and (min-width: 768px) {
+                                                object-position: center;
+                                                height: 300px;
+                                            }
+    
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                object-position: center;
+                                                height: 180px;
+                                            }
                                         }
                                     }
 
-                                    span{
-                                        font-size: 40px;
-                                        padding: 15px;
-                                    }
 
-                                    p{
-                                        font-size: 30px;
-                                        padding: 15px;
-                                    }
-                                }
 
-                                &#young, &#school{
-                                    width: 38%;
+                                    &#school{
+                                        @media (min-width: 992px) {
+                                            margin-bottom: 5px;
+                                        }
 
-                                    @media (min-width: 992px) {
-                                        float: right;
-                                        margin-top: 15px;
-                                        margin-bottom: 10px;
-                                        margin-right: 15px;
-                                    }
-
-                                    @media(max-width: 991px) and (min-width: 768px) {
-                                        width: 47.5%;
-                                    }
-
-                                    @media(max-width: 768px) and (min-width: 577px) {
-                                        width: 46.5%;
-                                    }
-
-                                    img{
-                                        object-fit: cover;
-                                        object-position: center;
-                                        width: 100%;
-                                        height: 230px;
-                                        margin-right: 0;
-
-                                        @media(max-width: 768px) and (min-width: 577px) {
-                                            height: 200px;
+                                        @media(max-width: 991px) and (min-width: 577px) {
+                                            float: left;
+                                            margin-bottom: 5px;
+                                            margin-left: 15px;
                                         }
                                     }
-                                }
 
-                                &#school{
-                                    @media (min-width: 992px) {
-                                        margin-bottom: 5px;
-                                    }
-
-                                    @media(max-width: 991px) and (min-width: 577px) {
-                                        float: left;
-                                        margin-bottom: 5px;
-                                        margin-left: 15px;
-                                    }
-                                }
-
-                                &#young{
-                                    @media(max-width: 991px) and (min-width: 577px) {
-                                        float: right;
-                                        margin-bottom: 5px;
-                                        margin-right: 15px;
+                                    &#young{
+                                        @media(max-width: 991px) and (min-width: 577px) {
+                                            float: right;
+                                            margin-bottom: 5px;
+                                            margin-right: 15px;
+                                        }
                                     }
                                 }
                             }
