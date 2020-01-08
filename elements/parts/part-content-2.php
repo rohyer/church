@@ -20,9 +20,8 @@
 			</div>
 
 			<div id="second-content-2" class="d-none d-lg-block col-md-7">
-				<a href="https://br.freepik.com/fotos-vetores-gratis/escola">
+				<!-- <a href="https://br.freepik.com/fotos-vetores-gratis/escola"></a> -->
 					<?php the_post_thumbnail(); ?>
-				</a>
 			</div>
 
 			<?php } ?>

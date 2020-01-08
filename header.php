@@ -16,7 +16,7 @@
 				<div id="logo" class="d-flex justify-content-center justify-content-md-start col-md-4 col-lg-4 col-xl-4">
 					<h1><a href="<?php echo esc_url( home_url('/') ); ?>">
 					
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/main-img/logo-main.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/main-img/logo/logo-main.png" alt="">
 					<div id="name-logo"> Comunidade Luterana</div></a></h1> 
 				</div>
 

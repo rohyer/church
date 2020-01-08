@@ -1,5 +1,6 @@
 <section id="content-4">
-	<a href="https://br.freepik.com/fotos-vetores-gratis/pessoas"><span id="img-eventos"></span></a>
+	<!-- <a href="https://br.freepik.com/fotos-vetores-gratis/pessoas"></a> -->
+	<span id="img-eventos"></span>
 
 	<span id="contact-message">
 		<h6>Faça parte do corpo de Cristo.</h6>
