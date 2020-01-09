@@ -12,18 +12,11 @@
 
         @media (max-width: 577px) and (min-width: 300px) {
             font-size: 35px;
-            // padding: 0 20px;
         }
 
         @media (max-width: 768px) and (min-width: 576px) {
             font-size: 38px;
-            // padding: 0 30px;
         }
-
-        // @media (min-width: 650px) and (max-width: 991px) {
-        //     width: 100%;
-        //     text-align: center;
-        // }
     }
 }
 
@@ -49,7 +42,18 @@ section{
                 } 
             }
 
+            @media (max-width: 577px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            @media (max-width: 767px) and (min-width: 578px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
             @media (min-width: 768px) {
+                padding-left: 30px;
                 padding-right: 80px;
             }
 
@@ -134,8 +138,19 @@ section{
         }
 
         #contact-contact{
-            @media (min-width: 768px) {
+            @media (max-width: 767px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            @media (max-width: 577px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            @media (min-width: 768px) and (min-width: 578px) {
                 padding-left: 80px;
+                padding-right: 30px;
                 border-left: 1px solid #cdcdcd;
             }
 
