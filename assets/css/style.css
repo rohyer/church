@@ -15245,7 +15245,7 @@ section#page-messages {
       transition-duration: .3s; }
       @media (min-width: 1200px) {
         section#page-messages #messages ul li.message-post {
-          min-height: 490px;
+          min-height: 470px;
           max-height: 525px; } }
       @media (max-width: 1199px) and (min-width: 992px) {
         section#page-messages #messages ul li.message-post {
