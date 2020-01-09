@@ -18,7 +18,15 @@ $('#banner-full ul').owlCarousel({
 });
 
 $('#events ul').owlCarousel({
-	loop: false,
+	loop: true,
+    autoplay: true,
+	autoplayTimeout: 2200,
+	autoplayHoverPause: true,
+	autoplaySpeed: false,
+	// dotClass: 'owl-dot',
+	// dotsClass: 'owl-dots',
+	dots: true,
+	navText: [" ", " "],
 	responsiveClass: true,
 	responsive:{
 		0:{
@@ -40,8 +48,11 @@ $('#schedules-responsive ul').owlCarousel({
 	items: 1,
 	loop: true,
 	autoplay: true,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
+    autoplayTimeout: 1500,
+	autoplayHoverPause: true,
+	autoplaySpeed: false,
+	dots: true,
+	navText: [" ", " "],
 	responsiveClass: true,
 	responsive:{
 		0:{
@@ -54,7 +65,13 @@ $('#schedules-responsive ul').owlCarousel({
 
 $('#schedules .aul').owlCarousel({
 	items: 1,
-	loop: false,
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 10000000,
+	autoplayHoverPause: true,
+	autoplaySpeed: false,
+	dots: true,
+	navText: [" ", " "],
 	responsiveClass: true,
 	responsive:{
 		0:{
@@ -74,10 +91,13 @@ $('#schedules .aul').owlCarousel({
 
 $('#messages ul').owlCarousel({
 	items: 1,
-	loop: false,
+	loop: true,
 	autoplay: true,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
+    autoplayTimeout: 1500,
+	autoplayHoverPause: true,
+	autoplaySpeed: false,
+	dots: true,
+	navText: [" ", " "],
 	responsiveClass: true,
 	responsive:{
 		0:{

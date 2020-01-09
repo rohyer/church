@@ -51,6 +51,15 @@
 				-webkit-backface-visibility: visible;
 				transition: opacity 200ms ease;
 				border-radius: $dot-rounded;
+
+				@media (max-width: 768px) {
+					width: 20px;
+					height: 3px;
+				}
+			}
+
+			&:focus {
+				outline: 0;
 			}
 
 			&.active,

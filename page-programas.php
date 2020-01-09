@@ -238,7 +238,7 @@
                         <ul class="owl-carousel owl-theme">
                             <li id="cult-responsive" class="li-one-schedule-responsive">
                             <?php
-                            $args = array('category_name' => 'programas');
+                            $args = array('p' => '46');
                             $query = new WP_Query($args);
 
                             if ( $query->have_posts() ) {
@@ -342,34 +342,35 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="owl-carousel owl-theme">
-                        <?php
-                        $args = array(
-                            'numberposts' => '10',
-                            'category_name' => 'eventos'
-                        );
-                        $query = new WP_Query($args);
-                        if ( $query->have_posts() ) {
-                            while ( $query->have_posts() ) { 
-                                $query->the_post() 
-                        ?>
-                        <li id="post-<?php the_ID() ?>" class="event-post">
-                            <div class="event-img">
-                                <?php the_post_thumbnail() ?>
-                                <a href="<?php the_permalink() ?>" class="d-none d-md-block">Saiba mais</a>
-                            </div>
-                            <div class="event-content">
-                                <span><?php the_title() ?></span>
-                                <?php
-                                $excerpt = get_the_excerpt();
-                                $excerpt = substr( $excerpt, 0, 115 );
-                                ?>
-                                <p><?php echo $excerpt . '...'; ?><a href="<?php the_permalink(); ?>" class="d-block d-md-none">ver mais</a></p>
-                            </div>
-                        </li>
-                        <?php
+                            <?php
+                            $args = array(
+                                'numberposts' => '10',
+                                'category_name' => 'eventos'
+                            );
+                            $query = new WP_Query($args);
+                            if ( $query->have_posts() ) {
+                                while ( $query->have_posts() ) { 
+                                    $query->the_post() 
+                            ?>
+                            <li id="post-<?php the_ID() ?>" class="event-post">
+                                <div class="event-img">
+                                    <?php the_post_thumbnail() ?>
+                                    <a href="<?php the_permalink() ?>" class="d-none d-md-block">Saiba mais</a>
+                                </div>
+                                <div class="event-content">
+                                    <span><?php the_title() ?></span>
+                                    <?php
+                                    $excerpt = get_the_excerpt();
+                                    $excerpt = substr( $excerpt, 0, 115 );
+                                    ?>
+                                    <p><?php echo $excerpt . '...'; ?><a href="<?php the_permalink(); ?>" class="d-block d-md-none">ver mais</a></p>
+                                </div>
+                            </li>
+                            <?php
+                                }    
                             }
-                        }
-                        ?>
+                            ?>
+                            
                         </ul>
                     </div>
                 </div>

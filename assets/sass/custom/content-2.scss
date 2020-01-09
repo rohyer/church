@@ -59,19 +59,11 @@ section{
 				font-weight: 300;
 				line-height: 32px;
 				color: #7e7e7e;
-
-				@media (max-width: 1099px) {
-					font-size: 18px;
-				}
-
+				
 				@media (max-width: 991px) {
 					text-align: center;
 				}
-
-				@media (max-width: 768px) {
-					text-align: justify;
-				}
-				
+			
 			}
 		}
 

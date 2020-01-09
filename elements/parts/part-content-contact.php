@@ -1,5 +1,5 @@
 <section id="content-contact" class="show">
-	<div class="container">
+	<div class="container-custom-i">
 		<div class="row">
 			<div class="col-12">
 				<h6>Caso prefira, nos envie seu e-mail e entraremos em contato</h6>

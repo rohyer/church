@@ -60,7 +60,7 @@
 </header>
 
 <nav id="main-menu-responsive" class="d-block d-lg-none">
-	<div class="container-custom">
+	<div class="container-custom-h">
 		<ul>
 			<h6>Menu</h6>
 			<li><a href="./index.php">Home</a></li>
