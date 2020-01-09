@@ -67,7 +67,7 @@ $('#schedules .aul').owlCarousel({
 	items: 1,
 	loop: true,
 	autoplay: true,
-	autoplayTimeout: 10000000,
+	autoplayTimeout: 3000,
 	autoplayHoverPause: true,
 	autoplaySpeed: false,
 	dots: true,
