@@ -140,7 +140,7 @@ section{
 
                                         @media(max-width: 991px) and (min-width: 768px) {
                                             object-position: top;
-                                            height: 300px;
+                                            height: 270px;
                                         }
 
                                         @media(max-width: 768px) and (min-width: 577px) {
@@ -157,6 +157,10 @@ section{
                                     p{
                                         font-size: 30px;
                                         padding: 15px;
+
+                                        @media(max-width: 768px) and (min-width: 577px) {
+                                            font-size: 28px
+                                        }
                                     }
                                 }
 
@@ -291,7 +295,7 @@ section{
                                             width: 100%;
                                             padding: 15px;
 
-                                            @media(max-width: 768px) and (min-width: 577px) {
+                                            @media (max-width: 768px) and (min-width: 577px) {
                                                 font-size: 25px;
                                                 left: 0;
                                                 padding: 15px 12px 15px 12px;
@@ -309,7 +313,7 @@ section{
                                             width: 100%;
                                             padding: 15px;
 
-                                            @media(max-width: 768px) and (min-width: 577px) {
+                                            @media (max-width: 768px) and (min-width: 577px) {
                                                 font-size: 22px;
                                                 left: 0;
                                                 padding: 15px 12px 15px 12px;
@@ -336,7 +340,7 @@ section{
                                             height: 480px;
 
                                             @media(max-width: 991px) and (min-width: 768px) {
-                                                height: 300px;
+                                                height: 270px;
                                             }
 
                                             @media(max-width: 768px) and (min-width: 577px) {
@@ -352,6 +356,10 @@ section{
                                         p{
                                             font-size: 30px;
                                             padding: 15px;
+
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                font-size: 28px
+                                            }
                                         }
                                     }
 
@@ -442,6 +450,73 @@ section{
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+
+                    &.alone-posts-programs {
+                        position: relative;
+                        margin: 15px;
+
+                        &:before{
+                            background-color: rgba(12, 20, 20, 0.4);
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        img {
+                            object-fit: cover;
+                            object-position: center;
+                            width: 100%;
+                            height: 480px;
+
+                            @media (max-width: 991px) and (min-width: 769px) {
+                                height: 510px;
+                            }
+
+                            @media (max-width: 768px) and (min-width: 578px) {
+                                height: 390px;
+                            }
+                            
+                        }
+
+                        span {
+                            position: absolute;
+                            top: 5px;
+                            left: 15px;
+                            font-size: 40px;
+                            font-weight: 300;
+                            color: #ffffff;
+                            float: left;
+                            width: 100%;
+                            padding: 15px;
+
+                            @media(max-width: 768px) and (min-width: 577px) {
+                                left: 0;
+                                padding: 15px 12px 15px 12px;
+                            }
+                        }
+
+                        p{
+                            position: absolute;
+                            top: 60px;
+                            left: 15px;
+                            font-size: 30px;
+                            font-weight: 300;
+                            color: #ffffff;
+                            float: left;
+                            width: 100%;
+                            padding: 15px;
+
+                            @media(max-width: 768px) and (min-width: 577px) {
+                                font-size: 28px;
+                                left: 0;
+                                padding: 15px 12px 15px 12px;
                             }
                         }
                     }

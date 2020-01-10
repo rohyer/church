@@ -225,6 +225,26 @@
                                 </ul>
                                 <?php } ?>
                             </li>
+
+                            <?php
+                            $argsCategory = array(
+                                'category_name' => 'outros'
+                            );
+                            $queryCategory = new WP_Query($argsCategory);
+                                if ( $queryCategory->have_posts() ) {
+                                    while ( $queryCategory->have_posts() ) { 
+                                        $queryCategory->the_post(); 
+                            ?>
+                            
+                            <li class="alone-posts-programs">
+                                <?php the_post_thumbnail() ?>
+                                    <span><?php the_title() ?></span>
+                                    <p><?php the_content() ?></p>  
+                            </li>
+                                
+                            <?php }
+                                }
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -236,89 +256,28 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="owl-carousel owl-theme">
+
+                            <?php
+                            $argsTotal = array(
+                                'category_name' => 'programas'
+                            );
+                            $queryTotal = new WP_Query($argsTotal);
+
+                            if ( $queryTotal->have_posts() ) {
+                                while ( $queryTotal->have_posts() ) { 
+                                    $queryTotal->the_post(); 
+                            ?>
+
                             <li id="cult-responsive" class="li-one-schedule-responsive">
-                            <?php
-                            $args = array('p' => '46');
-                            $query = new WP_Query($args);
-
-                            if ( $query->have_posts() ) {
-                                $query->the_post();
-                            ?>
                                 <?php the_post_thumbnail() ?>
                                 <span><?php the_title() ?></span>
                                 <p><?php the_content() ?></p>
-                            <?php } ?>
+                            
                             </li>
 
-                            <li id="communion-responsive" class="li-one-schedule-responsive">
-                            <?php
-                            $args = array('p' => '52');
-                            $query = new WP_Query($args);
-
-                            if ( $query->have_posts() ) {
-                                        $query->the_post();
+                            <?php } 
+                                }
                             ?>
-                                <?php the_post_thumbnail() ?>
-                                <span><?php the_title() ?></span>
-                                <p><?php the_content() ?></p>  
-                            <?php } ?>
-                            </li>
-
-                            <li id="pray-responsive" class="li-one-schedule-responsive">
-                            <?php
-                            $args = array('p' => '56');
-                            $query = new WP_Query($args);
-
-                            if ( $query->have_posts() ) {
-                                $query->the_post();
-                            ?>
-                                <?php the_post_thumbnail() ?>
-                                <span><?php the_title() ?></span>
-                                <p><?php the_content() ?></p>
-                            <?php } ?>
-                            </li>
-
-                            <li id="project-responsive" class="li-one-schedule-responsive">
-                            <?php
-                            $args = array('p' => '58');
-                            $query = new WP_Query($args);
-
-                            if ( $query->have_posts() ) {
-                                $query->the_post();
-                            ?>
-                                <?php the_post_thumbnail() ?>
-                                <span><?php the_title() ?></span>
-                                <p><?php the_content() ?></p>  
-                            <?php } ?>
-                            </li>
-
-                            <li id="school-responsive" class="li-one-schedule-responsive">
-                            <?php
-                            $args = array('p' => '60');
-                            $query = new WP_Query($args);
-
-                            if ( $query->have_posts() ) {
-                                $query->the_post();
-                            ?>
-                                <?php the_post_thumbnail() ?>
-                                <span><?php the_title() ?></span>
-                                <p><?php the_content() ?></p>  
-                            <?php } ?>
-                            </li>
-
-                            <li id="young-responsive" class="li-one-schedule-responsive">
-                            <?php
-                            $args = array('p' => '63');
-                            $query = new WP_Query($args);
-
-                            if ( $query->have_posts() ) {
-                                $query->the_post();
-                            ?>
-                                <?php the_post_thumbnail() ?>
-                                <span><?php the_title() ?></span>
-                                <p><?php the_content() ?></p>  
-                            <?php } ?>
-                            </li>
                         </ul>
                     </div>
                 </div>

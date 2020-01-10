@@ -18,7 +18,7 @@ $('#banner-full ul').owlCarousel({
 });
 
 $('#events ul').owlCarousel({
-	loop: true,
+	loop: false,
     autoplay: true,
 	autoplayTimeout: 2200,
 	autoplayHoverPause: true,
@@ -48,7 +48,7 @@ $('#schedules-responsive ul').owlCarousel({
 	items: 1,
 	loop: true,
 	autoplay: true,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 1750,
 	autoplayHoverPause: true,
 	autoplaySpeed: false,
 	dots: true,
@@ -66,10 +66,10 @@ $('#schedules-responsive ul').owlCarousel({
 $('#schedules .aul').owlCarousel({
 	items: 1,
 	loop: true,
-	autoplay: true,
-	autoplayTimeout: 3000,
-	autoplayHoverPause: true,
-	autoplaySpeed: false,
+	// autoplay: true,
+	// autoplayTimeout: 3000,
+	// autoplayHoverPause: true,
+	// autoplaySpeed: false,
 	dots: true,
 	navText: [" ", " "],
 	responsiveClass: true,

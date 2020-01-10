@@ -14817,7 +14817,7 @@ section#main-schedules {
               @media (max-width: 991px) and (min-width: 768px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
                   object-position: top;
-                  height: 300px; } }
+                  height: 270px; } }
               @media (max-width: 768px) and (min-width: 577px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
                   object-position: top;
@@ -14828,6 +14828,9 @@ section#main-schedules {
             section#main-schedules #schedules ul li#first-three-schedules ul li.cult p {
               font-size: 30px;
               padding: 15px; }
+              @media (max-width: 768px) and (min-width: 577px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li.cult p {
+                  font-size: 28px; } }
           section#main-schedules #schedules ul li#first-three-schedules ul li#communion, section#main-schedules #schedules ul li#first-three-schedules ul li#pray {
             width: 38%; }
             @media (min-width: 992px) {
@@ -14957,7 +14960,7 @@ section#main-schedules {
             height: 480px; }
             @media (max-width: 991px) and (min-width: 768px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
-                height: 300px; } }
+                height: 270px; } }
             @media (max-width: 768px) and (min-width: 577px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
                 height: 180px; } }
@@ -14967,6 +14970,9 @@ section#main-schedules {
           section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project p {
             font-size: 30px;
             padding: 15px; }
+            @media (max-width: 768px) and (min-width: 577px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project p {
+                font-size: 28px; } }
         section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school {
           width: 38%; }
           @media (min-width: 992px) {
@@ -15029,6 +15035,58 @@ section#main-schedules {
             float: right;
             margin-bottom: 5px;
             margin-right: 15px; } }
+      section#main-schedules #schedules ul li.alone-posts-programs {
+        position: relative;
+        margin: 15px; }
+        section#main-schedules #schedules ul li.alone-posts-programs:before {
+          background-color: rgba(12, 20, 20, 0.4);
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        section#main-schedules #schedules ul li.alone-posts-programs img {
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 480px; }
+          @media (max-width: 991px) and (min-width: 769px) {
+            section#main-schedules #schedules ul li.alone-posts-programs img {
+              height: 510px; } }
+          @media (max-width: 768px) and (min-width: 578px) {
+            section#main-schedules #schedules ul li.alone-posts-programs img {
+              height: 390px; } }
+        section#main-schedules #schedules ul li.alone-posts-programs span {
+          position: absolute;
+          top: 5px;
+          left: 15px;
+          font-size: 40px;
+          font-weight: 300;
+          color: #ffffff;
+          float: left;
+          width: 100%;
+          padding: 15px; }
+          @media (max-width: 768px) and (min-width: 577px) {
+            section#main-schedules #schedules ul li.alone-posts-programs span {
+              left: 0;
+              padding: 15px 12px 15px 12px; } }
+        section#main-schedules #schedules ul li.alone-posts-programs p {
+          position: absolute;
+          top: 60px;
+          left: 15px;
+          font-size: 30px;
+          font-weight: 300;
+          color: #ffffff;
+          float: left;
+          width: 100%;
+          padding: 15px; }
+          @media (max-width: 768px) and (min-width: 577px) {
+            section#main-schedules #schedules ul li.alone-posts-programs p {
+              font-size: 28px;
+              left: 0;
+              padding: 15px 12px 15px 12px; } }
   section#main-schedules #schedules-responsive {
     float: left;
     width: 100%; }
