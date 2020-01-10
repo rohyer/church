@@ -14043,7 +14043,7 @@ section#content-1 {
   background-color: #ffffff; }
   @media (max-width: 991px) and (min-width: 769px) {
     section#content-1 {
-      height: 350px;
+      height: auto;
       padding: 78px 0; } }
   @media (max-width: 768px) {
     section#content-1 {
@@ -14059,7 +14059,7 @@ section#content-1 {
         font-size: 32px; } }
   section#content-1 p {
     text-align: center;
-    width: 630px;
+    width: 715px;
     margin: 0 auto;
     font-family: "roboto";
     font-size: 20px;
@@ -14221,7 +14221,7 @@ section#content-4 {
       background-size: cover;
       background-repeat: no-repeat; }
     section#content-4 span#img-eventos:before {
-      background-color: rgba(37, 37, 37, 0.55);
+      background-color: rgba(37, 37, 37, 0.58);
       content: '';
       display: block;
       width: 100%;
@@ -14298,6 +14298,9 @@ section#content-4 {
         background-color: #ffffff;
         color: #5e5e5e;
         transition-duration: .2s; }
+      @media (max-width: 340px) {
+        section#content-4 span#contact-message a {
+          font-size: 20px; } }
 
 section#content-contact {
   float: left;
@@ -15049,7 +15052,7 @@ section#main-schedules {
           top: 0; }
         section#main-schedules #schedules ul li.alone-posts-programs img {
           object-fit: cover;
-          object-position: center;
+          object-position: top;
           width: 100%;
           height: 480px; }
           @media (max-width: 991px) and (min-width: 769px) {

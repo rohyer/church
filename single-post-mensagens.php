@@ -2,6 +2,9 @@
 
 <div class="back-image-page">
     <?php get_template_part('elements/parts/part', 'secondary-image'); ?>
+    <div class="container-custom-h">
+        <h3>Mensagens</h3>
+    </div>
 </div>
 
 <section class="post-content">

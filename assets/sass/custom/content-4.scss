@@ -31,7 +31,7 @@ section{
 				}
 	
 				&:before{
-					background-color: rgba(37, 37, 37, 0.55);
+					background-color: rgba(37, 37, 37, 0.58);
 					content: '';
 					display: block;
 					width: 100%;
@@ -125,6 +125,10 @@ section{
 						background-color: #ffffff;
 						color: #5e5e5e;
 						transition-duration: .2s;
+					}
+
+					@media (max-width: 340px) {
+						font-size: 20px;
 					}
 				}
 			}

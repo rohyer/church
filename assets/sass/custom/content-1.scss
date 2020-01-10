@@ -5,7 +5,7 @@ section{
 		background-color: #ffffff;
 
 		@media (max-width: 991px) and (min-width: 769px) {
-			height: 350px;
+			height: auto;
 			padding: 78px 0;
 		}
 
@@ -27,7 +27,7 @@ section{
 
 		p{
 			text-align: center;
-			width: 630px;
+			width: 715px;
 			margin: 0 auto;
 			font-family: $ff-main;
 			font-size: 20px;
