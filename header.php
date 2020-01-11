@@ -63,7 +63,7 @@
 	<div class="container-custom-h">
 		<ul>
 			<h6>Menu</h6>
-			<li><a href="./index.php">Home</a></li>
+			<li><a href="<?php echo esc_url( home_url('/') ); ?>">Home</a></li>
 			<li><a href="./programas">Programas & Eventos</a></li>
 			<li><a href="./mensagens">Mensagens</a></li>
 			<li><a href="./contato">Contato</a></li>
