@@ -1,3 +1,10 @@
+/*
+Theme Name: Lutheran Community
+Author: Guilherme R. de Oliveira
+Description: Site about the community Luterana in Araçatuba/SP - Brazil. The technologies used were Javascript, Jquery, HTML5, CSS3, SASS.
+Version: 1.0.
+*/
+
 $('#banner-full ul').owlCarousel({
 	loop: true,
 	responsiveClass: true,
