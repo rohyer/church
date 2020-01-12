@@ -172,22 +172,33 @@ section{
             }
 
             p{
-                font-size: 32px;
                 font-weight: 400;
                 color: #5dc7ce;
                 padding-bottom: 20px;
                 border-bottom: 1px solid #cdcdcd;
 
-                @media (max-width: 992px) and (min-width: 768px) {
+                @media (min-width: 1099px) {
                     font-size: 24px;
                 }
 
-                @media (max-width: 767px) and (min-width: 481px){
-                    font-size: 26px;
+                @media (max-width: 1098px) and (min-width: 992px) {
+                    font-size: 22px;
                 }
 
-                @media (max-width: 480px) {
+                @media (max-width: 991px) and (min-width: 768px) {
+                    font-size: 17px;
+                }
+
+                @media (max-width: 767px) and (min-width: 481px){
+                    font-size: 20px;
+                }
+
+                @media (max-width: 480px) and (min-width: 421px) {
                     font-size: 22px;
+                }
+
+                @media (max-width: 420px) {
+                    font-size: 16px;
                 }
             }
 
