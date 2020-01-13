@@ -14431,10 +14431,7 @@ section#content-contact {
       float: left;
       list-style: none;
       margin: 0; }
-      @media (max-width: 991px) {
-        #footer #footer-content ul {
-          width: 100%; } }
-      @media (max-width: 767px) {
+      @media (max-width: 577px) {
         #footer #footer-content ul:nth-child(2) {
           margin-top: 20px; } }
       #footer #footer-content ul h6 {
@@ -14456,7 +14453,7 @@ section#content-contact {
       @media (max-width: 991px) {
         #footer #footer-content iframe {
           margin-left: 0; } }
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         #footer #footer-content iframe {
           margin-top: 20px; } }
 

@@ -15,11 +15,7 @@
 			list-style: none;
 			margin: 0;
 
-			@media (max-width: 991px) {
-				width: 100%;
-			}
-
-			@media (max-width: 767px) {
+			@media (max-width: 577px) {
 				&:nth-child(2) {
 					margin-top: 20px;
 				}
@@ -56,7 +52,7 @@
 				margin-left: 0;
 			}
 
-			@media (max-width: 767px) {
+			@media (max-width: 991px) {
 				margin-top: 20px;
 			}
 		}
