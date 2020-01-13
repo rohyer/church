@@ -14424,6 +14424,10 @@ section#content-contact {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f5f5f5; }
+  @media (max-width: 768px) {
+    #footer {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   #footer #footer-content {
     width: 100%; }
     #footer #footer-content ul {
@@ -14456,6 +14460,19 @@ section#content-contact {
       @media (max-width: 991px) {
         #footer #footer-content iframe {
           margin-top: 20px; } }
+  #footer #bottom-footer {
+    margin-top: 30px; }
+    @media (max-width: 991px) {
+      #footer #bottom-footer {
+        margin-top: 40px; } }
+    #footer #bottom-footer #developed-by p {
+      font-family: "Montserrat";
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      margin: 0; }
+      #footer #bottom-footer #developed-by p:first-child {
+        font-size: 14px; }
 
 section.post-content {
   margin: 95px 0; }
