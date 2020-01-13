@@ -2,7 +2,7 @@
 		<div class="container-custom-h">
 			<div class="row">
 				<div id="footer-content">
-					<ul class="col-xl-4 col-lg-4 col-md-3 col-sm-6">
+					<ul class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
 						<h6>Menu</h6>
 						<li><a href="<?php echo esc_url( home_url('/') ); ?>">Home</a></li>
 						<li><a href="./programas">Programas & Eventos</a></li>
@@ -10,7 +10,7 @@
 						<li><a href="./contato">Contato</a></li>
 					</ul>
 
-					<ul class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+					<ul class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
 						<h6>Contato</h6>
 						<li>Email: <?php echo get_theme_mod( 'email_section' ); ?></li>
 						<li>Telefone: <?php echo get_theme_mod( 'telefone_section' ); ?></li>

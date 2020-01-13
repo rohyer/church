@@ -5,7 +5,7 @@ section{
 		background-color: #ffffff;
 
 		@media (max-width: 991px) and (min-width: 768px) {
-			height: 350px;
+			height: auto;
 			padding: 70px 0;
 		}
 
@@ -25,6 +25,12 @@ section{
 
 				@media (max-width: 1199px) and (min-width: 992px) {
 					width: 465px;
+				}
+
+				@media (max-width: 991px) {
+					display: none;
+					width: 0;
+					height: 0;
 				}
 			}
 		}
@@ -74,7 +80,9 @@ section{
 		}
 
 		&.show{
-			opacity: 0;
+			@media (min-width: 992px) {
+				opacity: 0;
+			}
 		}
 	}
 }

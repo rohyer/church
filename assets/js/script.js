@@ -150,7 +150,7 @@ function sizeOfWindowToMenu() {
 
 	if (windowWidth <= 991) {
 		valueHeight = windowHeight - heightHeaderMenuResponsive
-		mainMenuResponsive.style.height = valueHeight + 'px'
+		mainMenuResponsive.style.height = valueHeight + 80 + 'px'
 		console.log(valueHeight)
 	} else {
 		mainMenuResponsive.style.height = '100%'
@@ -159,17 +159,17 @@ function sizeOfWindowToMenu() {
 sizeOfWindowToMenu()
 
 // Redimensiona a altura da height
-window.addEventListener('resize', adjustMenuResponsive)
-function adjustMenuResponsive() {
-	let windowWidth = window.innerWidth
-	let mainMenuResponsive = window.document.getElementById('main-menu-responsive')
+// window.addEventListener('resize', adjustMenuResponsive)
+// function adjustMenuResponsive() {
+// 	let windowWidth = window.innerWidth
+// 	let mainMenuResponsive = window.document.getElementById('main-menu-responsive')
 
-	if (windowWidth >= 992) {
-		mainMenuResponsive.style.height = '100%'
-	} else {
-		mainMenuResponsive.style.height = '91%'
-	}	
-}
+// 	if (windowWidth >= 992) {
+// 		mainMenuResponsive.style.height = '100%'
+// 	} else {
+// 		mainMenuResponsive.style.height = '91%'
+// 	}	
+// }
 
 
 $(window).on("load scroll", function(){
@@ -225,12 +225,12 @@ function smoothScrollTo(endY, duration) {
 
 	duration = typeof duration !== 'undefined' ? duration : 400
 
-	const easeInOutQuart = (time, from, distance, duration) => {
+	const easeInOutQuart = function(time, from, distance, duration) {
 		if ((time /= duration /2 ) < 1) return distance / 2 * time * time * time * time * time + from
 		return -distance /2 * ((time -= 2) * time * time * time - 2) + from
 	}
 
-	const timer = setInterval(() => {
+	const timer = setInterval(function() {
 		const time = new Date().getTime() - startTime
 		const newY = easeInOutQuart(time, startY, distanceY, duration)
 		if (time >= duration) {

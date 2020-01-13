@@ -5,6 +5,23 @@ section {
         background-image: url(../img/main-img/back-10.jpg);
         background-size: cover;
         background-position: bottom;
+        
+
+        @media (min-width: 1200px) {
+            height: 800px;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            height: 700px;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            height: 650px;
+        }
+
+        @media (max-width: 991px) {
+            height: 500px;
+        }
 
         &:before {
             content: '';
