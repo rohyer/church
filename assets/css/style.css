@@ -14445,7 +14445,7 @@ section#content-contact {
       #footer #footer-content ul li {
         margin-bottom: 7px; }
         #footer #footer-content ul li a {
-          color: initial; }
+          color: inherit; }
           #footer #footer-content ul li a:hover {
             text-decoration: none; }
     #footer #footer-content iframe {

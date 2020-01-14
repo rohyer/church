@@ -312,17 +312,27 @@
             </div>
         </div>
     </section>
-
+    
+    
     <section id="main-events">
+        <?php
+            $args = array(
+                'numberposts' => '10',
+                'category_name' => 'eventos'
+            );
+            $query = new WP_Query($args);
+            if ( $query->have_posts() ) {
+        ?>
         <div id="title-events" class="d-flex align-items-center">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h6>Eventos</h6>
+                    <h6>Eventos</h6>
                     </div>
                 </div>
             </div>
         </div>
+        <?php } ?>
 
         <div id="events">
             <div class="container-custom">
