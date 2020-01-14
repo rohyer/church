@@ -140,7 +140,7 @@ section{
 
                                         @media(max-width: 991px) and (min-width: 768px) {
                                             object-position: top;
-                                            height: 270px;
+                                            height: 250px;
                                         }
 
                                         @media(max-width: 768px) and (min-width: 577px) {
@@ -189,8 +189,67 @@ section{
                                         height: 230px;
                                         margin-right: 0;
 
+                                        @media(max-width: 991px) and (min-width: 768px) {
+                                            object-position: center;
+                                            height: 250px;
+                                        }
+
                                         @media(max-width: 768px) and (min-width: 577px) {
-                                            height: 200px;
+                                            height: 180px;
+                                        }
+                                    }
+                                }
+
+                                &#all-cult {
+                                    margin: 15px;
+
+                                    img {
+                                        object-fit: cover;
+                                        object-position: top;
+                                        width: 100%;
+                                        height: 480px;
+            
+                                        @media (max-width: 991px) and (min-width: 769px) {
+                                            height: 510px;
+                                        }
+            
+                                        @media (max-width: 768px) and (min-width: 578px) {
+                                            height: 370px;
+                                        }
+                                    }
+
+                                    span {
+                                        position: absolute;
+                                        top: 5px;
+                                        left: 15px;
+                                        font-size: 40px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 100%;
+                                        padding: 15px;
+            
+                                        @media(max-width: 768px) and (min-width: 577px) {
+                                            left: 0;
+                                            padding: 15px 12px 15px 12px;
+                                        }
+                                    }
+
+                                    p{
+                                        position: absolute;
+                                        top: 60px;
+                                        left: 15px;
+                                        font-size: 30px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        float: left;
+                                        width: 100%;
+                                        padding: 15px;
+            
+                                        @media(max-width: 768px) and (min-width: 577px) {
+                                            font-size: 28px;
+                                            left: 0;
+                                            padding: 15px 12px 15px 12px;
                                         }
                                     }
                                 }
@@ -207,7 +266,7 @@ section{
 
                                     @media(max-width: 991px) and (min-width: 577px) {
                                         width: initial;
-                                        margin: 10px 15px;
+                                        margin: 0 15px;
                                     }
 
                                     img{
@@ -219,7 +278,7 @@ section{
 
                                         @media(max-width: 991px) and (min-width: 768px) {
                                             object-position: top;
-                                            height: 300px;
+                                            height: 250px;
                                         }
 
                                         @media(max-width: 768px) and (min-width: 577px) {
@@ -340,7 +399,7 @@ section{
                                             height: 480px;
 
                                             @media(max-width: 991px) and (min-width: 768px) {
-                                                height: 270px;
+                                                height: 250px;
                                             }
 
                                             @media(max-width: 768px) and (min-width: 577px) {
@@ -388,10 +447,69 @@ section{
                                             height: 230px;
                                             margin-right: 0;
 
+                                            @media(max-width: 991px) and (min-width: 769px) {
+                                                object-position: center;
+                                                height: 250px;
+                                            }
+
                                             @media(max-width: 768px) and (min-width: 577px) {
-                                                height: 200px;
+                                                height: 180px;
                                             }
                                         }  
+                                    }
+
+                                    &#all-project {
+                                        margin: 15px;
+    
+                                        img {
+                                            object-fit: cover;
+                                            object-position: center;
+                                            width: 100%;
+                                            height: 480px;
+                
+                                            @media (max-width: 991px) and (min-width: 769px) {
+                                                height: 510px;
+                                            }
+                
+                                            @media (max-width: 768px) and (min-width: 578px) {
+                                                height: 370px;
+                                            }
+                                        }
+    
+                                        span {
+                                            position: absolute;
+                                            top: 5px;
+                                            left: 15px;
+                                            font-size: 40px;
+                                            font-weight: 300;
+                                            color: #ffffff;
+                                            float: left;
+                                            width: 100%;
+                                            padding: 15px;
+                
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                left: 0;
+                                                padding: 15px 12px 15px 12px;
+                                            }
+                                        }
+    
+                                        p{
+                                            position: absolute;
+                                            top: 60px;
+                                            left: 15px;
+                                            font-size: 30px;
+                                            font-weight: 300;
+                                            color: #ffffff;
+                                            float: left;
+                                            width: 100%;
+                                            padding: 15px;
+                
+                                            @media(max-width: 768px) and (min-width: 577px) {
+                                                font-size: 28px;
+                                                left: 0;
+                                                padding: 15px 12px 15px 12px;
+                                            }
+                                        }
                                     }
 
                                     &#all-young, &#all-school{
@@ -406,7 +524,7 @@ section{
 
                                         @media (max-width: 991px) and (min-width: 577px) {
                                             width: initial;
-                                            margin: 10px 15px;
+                                            margin: 0 15px;
                                         }
 
                                         img{
@@ -418,7 +536,7 @@ section{
 
                                             @media(max-width: 991px) and (min-width: 768px) {
                                                 object-position: center;
-                                                height: 300px;
+                                                height: 250px;
                                             }
     
                                             @media(max-width: 768px) and (min-width: 577px) {
@@ -480,7 +598,7 @@ section{
                             }
 
                             @media (max-width: 768px) and (min-width: 578px) {
-                                height: 390px;
+                                height: 370px;
                             }
                             
                         }

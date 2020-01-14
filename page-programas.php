@@ -121,6 +121,20 @@
                                     <?php } ?>
                                     </li>
                                 </ul>
+
+                                <?php } elseif (!($queryCommunion->have_posts()) && !($queryPray->have_posts())) { ?>
+                                <ul>
+                                    <li id="all-cult" class="li-one-schedule">
+                                    <?php
+                                    if ( $queryCult->have_posts() ) {
+                                        $queryCult->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>
+                                    <?php } ?>
+                                    </li>
+                                </ul>
                                 <?php } ?>
                             </li>
 
@@ -222,6 +236,20 @@
                                     <?php } ?>
                                     </li>
 
+                                </ul>
+
+                                <?php } elseif (!($queryYoung->have_posts()) && !($querySchool->have_posts())) { ?>
+                                <ul class="three-schedules">
+                                    <li id="all-project" class="li-one-schedule">
+                                    <?php
+                                    if ( $queryProject->have_posts() ) {
+                                        $queryProject->the_post();
+                                    ?>
+                                        <?php the_post_thumbnail() ?>
+                                        <span><?php the_title() ?></span>
+                                        <p><?php the_content() ?></p>
+                                    <?php } ?>
+                                    </li>
                                 </ul>
                                 <?php } ?>
                             </li>

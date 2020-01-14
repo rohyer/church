@@ -14873,7 +14873,7 @@ section#main-schedules {
               @media (max-width: 991px) and (min-width: 768px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
                   object-position: top;
-                  height: 270px; } }
+                  height: 250px; } }
               @media (max-width: 768px) and (min-width: 577px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li.cult img {
                   object-position: top;
@@ -14907,9 +14907,55 @@ section#main-schedules {
               width: 100%;
               height: 230px;
               margin-right: 0; }
+              @media (max-width: 991px) and (min-width: 768px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#pray img {
+                  object-position: center;
+                  height: 250px; } }
               @media (max-width: 768px) and (min-width: 577px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li#communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#pray img {
-                  height: 200px; } }
+                  height: 180px; } }
+          section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult {
+            margin: 15px; }
+            section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult img {
+              object-fit: cover;
+              object-position: top;
+              width: 100%;
+              height: 480px; }
+              @media (max-width: 991px) and (min-width: 769px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult img {
+                  height: 510px; } }
+              @media (max-width: 768px) and (min-width: 578px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult img {
+                  height: 370px; } }
+            section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult span {
+              position: absolute;
+              top: 5px;
+              left: 15px;
+              font-size: 40px;
+              font-weight: 300;
+              color: #ffffff;
+              float: left;
+              width: 100%;
+              padding: 15px; }
+              @media (max-width: 768px) and (min-width: 577px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult span {
+                  left: 0;
+                  padding: 15px 12px 15px 12px; } }
+            section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult p {
+              position: absolute;
+              top: 60px;
+              left: 15px;
+              font-size: 30px;
+              font-weight: 300;
+              color: #ffffff;
+              float: left;
+              width: 100%;
+              padding: 15px; }
+              @media (max-width: 768px) and (min-width: 577px) {
+                section#main-schedules #schedules ul li#first-three-schedules ul li#all-cult p {
+                  font-size: 28px;
+                  left: 0;
+                  padding: 15px 12px 15px 12px; } }
           section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray {
             width: 38%; }
             @media (min-width: 992px) {
@@ -14921,7 +14967,7 @@ section#main-schedules {
             @media (max-width: 991px) and (min-width: 577px) {
               section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray {
                 width: initial;
-                margin: 10px 15px; } }
+                margin: 0 15px; } }
             section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray img {
               object-fit: cover;
               object-position: center;
@@ -14931,7 +14977,7 @@ section#main-schedules {
               @media (max-width: 991px) and (min-width: 768px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray img {
                   object-position: top;
-                  height: 300px; } }
+                  height: 250px; } }
               @media (max-width: 768px) and (min-width: 577px) {
                 section#main-schedules #schedules ul li#first-three-schedules ul li#all-communion img, section#main-schedules #schedules ul li#first-three-schedules ul li#all-pray img {
                   object-position: top;
@@ -15016,7 +15062,7 @@ section#main-schedules {
             height: 480px; }
             @media (max-width: 991px) and (min-width: 768px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
-                height: 270px; } }
+                height: 250px; } }
             @media (max-width: 768px) and (min-width: 577px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li.project img {
                 height: 180px; } }
@@ -15049,9 +15095,55 @@ section#main-schedules {
             width: 100%;
             height: 230px;
             margin-right: 0; }
+            @media (max-width: 991px) and (min-width: 769px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school img {
+                object-position: center;
+                height: 250px; } }
             @media (max-width: 768px) and (min-width: 577px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#school img {
-                height: 200px; } }
+                height: 180px; } }
+        section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project {
+          margin: 15px; }
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 480px; }
+            @media (max-width: 991px) and (min-width: 769px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project img {
+                height: 510px; } }
+            @media (max-width: 768px) and (min-width: 578px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project img {
+                height: 370px; } }
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project span {
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            font-size: 40px;
+            font-weight: 300;
+            color: #ffffff;
+            float: left;
+            width: 100%;
+            padding: 15px; }
+            @media (max-width: 768px) and (min-width: 577px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project span {
+                left: 0;
+                padding: 15px 12px 15px 12px; } }
+          section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project p {
+            position: absolute;
+            top: 60px;
+            left: 15px;
+            font-size: 30px;
+            font-weight: 300;
+            color: #ffffff;
+            float: left;
+            width: 100%;
+            padding: 15px; }
+            @media (max-width: 768px) and (min-width: 577px) {
+              section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-project p {
+                font-size: 28px;
+                left: 0;
+                padding: 15px 12px 15px 12px; } }
         section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school {
           width: 38%; }
           @media (min-width: 992px) {
@@ -15063,7 +15155,7 @@ section#main-schedules {
           @media (max-width: 991px) and (min-width: 577px) {
             section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school {
               width: initial;
-              margin: 10px 15px; } }
+              margin: 0 15px; } }
           section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school img {
             object-fit: cover;
             object-position: center;
@@ -15073,7 +15165,7 @@ section#main-schedules {
             @media (max-width: 991px) and (min-width: 768px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school img {
                 object-position: center;
-                height: 300px; } }
+                height: 250px; } }
             @media (max-width: 768px) and (min-width: 577px) {
               section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-young img, section#main-schedules #schedules ul li#second-three-schedules ul.three-schedules li#all-school img {
                 object-position: center;
@@ -15113,7 +15205,7 @@ section#main-schedules {
               height: 510px; } }
           @media (max-width: 768px) and (min-width: 578px) {
             section#main-schedules #schedules ul li.alone-posts-programs img {
-              height: 390px; } }
+              height: 370px; } }
         section#main-schedules #schedules ul li.alone-posts-programs span {
           position: absolute;
           top: 5px;
